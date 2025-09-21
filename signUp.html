@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>SignUp</title>
+</head>
+
+<body>
+    <nav class="bar">
+    <div class="logo">
+      <a href="#">CodeArt</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu" id="menu">
+      <li class="has-dropdown">
+        <a href="#">Learn <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li><h4>Web Development</h4></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><h4>Tools</h4></li>
+            <li><a href="#">Command Line</a></li>
+            <li><a href="#">Git & GitHub</a></li>
+            <li><a href="#">GitHub Copilot</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Build</a></li>
+      <li class="has-dropdown">
+        <a href="#">Community <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Leaderboards</a></li>
+            <li><a href="#">Project Showcase</a></li>
+            <li><a href="#">Monthly Challenge</a></li>
+            <li><a href="#">#30NitesOfCode</a></li>
+            <li><a href="#">Worlds</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+    <div class="right">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-solid fa-moon"></i></a>
+      <a href="./signUp.html" class="SignUpButton">Sign up</a>
+    </div>
+  </nav>
+
+    <div class="MainSignUp">
+
+        <form class="CardSignUp" id="CardSign">
+            <div
+                style="display: flex; flex-direction: column; justify-content: center;align-items: center; gap: 2.5rem;">
+                <h2 id="form_title">Sign Up</h2>
+
+                <!-- email -->
+                <div class="password-wrapper" id="email-wrapper">
+                    <input type="text" id="fEmail" name="Email" placeholder="Email">
+                </div>
+
+                <!-- password -->
+                <div class="password-wrapper" id="password-wrapper">
+                    <input type="password" id="fPassword" name="Password" placeholder="Password">
+                    <button type="button" class="toggle-password">
+                        <i class="fa fa-eye" id="eye-icon"></i>
+                    </button>
+                </div>
+                <button class="SignUpButtonBlue" id="form-button">SignUp For Free</button>
+                <p id="need_account">
+                    <span id="need_account_text">Already have an account?</span>
+                    <a href="#" id="toggle-linkLogin">Log In</a>
+                </p>
+
+                <p id="forgot-password" style="display: none;">
+                    <a href="#" id="forgot-password-link">Forgot your password?</a>
+                </p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center;align-items: center; gap: 2rem;">
+                <p style="color: gray;">-------------- or continue with --------------</p>
+                <div style="display: flex; justify-content: center; gap: 2rem;">
+                    <button class="GoogleButton"
+                        style="display: flex; justify-content: center; align-items: center; gap: 10px;"><span
+                            class="icon">G</span>Google</button>
+                    <button class="GoogleButton"
+                        style="display: flex;  justify-content: center; align-items: center; gap: 10px;"><span
+                            class="icon">⚡</span>GitHub</button>
+                </div>
+
+            </div>
+
+            <div class="computer-container">
+                <img src="./assets/images/animation secound page.webp" alt="Pixel computer" class="computer-image">
+            </div>
+        </form>
+
+    </div>
+    <script src="./signUp.js"></script>
+</body>
+
+</html>

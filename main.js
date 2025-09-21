@@ -100,3 +100,5 @@ document.querySelectorAll(".typewriter").forEach((el, i) => {
       },
       ease: "power1.out"
     });
+
+  

@@ -1,0 +1,992 @@
+/* CSS Reset and Base Styles */
+/* Remove default margins and padding from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Root variables for consistent color scheme and spacing */
+:root {
+  /* Color palette based on the pixel art theme */
+  --primary-bg: #142849; /* Dark blue background */
+  --secondary-bg: #0b121d; /* Darker blue for cards */
+  --accent-blue: #23406e; /* Bright blue for accents */
+  --text-light: #ffffff; /* White text */
+  --text-muted: #a0b4cc; /* Muted blue-gray text */
+  --card-bg: rgba(255, 255, 255, 0.95); /* Semi-transparent white for cards */
+  --border-color: #4a6488; /* Border color for form elements */
+
+  /* Typography */
+  --font-pixel: "Press Start 2P", cursive; /* Pixel font for headings */
+  --font-body: "Roboto", sans-serif; /* Modern font for body text */
+
+  /* Spacing system */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-md: 1.5rem; /* 24px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 3rem; /* 48px */
+}
+
+/* Base body styles */
+body {
+  font-family: var(--font-body); /* Set default font */
+  background: linear-gradient(
+    135deg,
+    var(--primary-bg) 0%,
+    var(--secondary-bg) 100%
+  ); /* Gradient background */
+  color: var(--text-light); /* Default text color */
+  min-height: 100vh; /* Minimum height to fill viewport */
+  line-height: 1.6; /* Improved readability with proper line height */
+}
+
+/* Nav */
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  height: 80px;
+  padding: 0 40px;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo a {
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #ffd700;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu li a:hover {
+  color: #ffd700;
+}
+
+.dropdown-toggle {
+  font-size: 14px;
+  color: #ffd700;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #111;
+  border-radius: 6px;
+  padding: 8px 0;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.menu li:hover > .dropdown {
+  display: block;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown ul li a:hover {
+  background-color: #333;
+  color: #ffd700;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.SignUpButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: #ffbf00;
+  border: 2px solid rgb(217, 216, 216);
+  border-bottom-width: 5px;
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
+}
+
+.SignUpButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1100;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border-top: 1px solid #222;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+    border-bottom: 1px solid #111;
+  }
+
+  .menu li a {
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  .dropdown {
+    position: static;
+    display: none;
+    background-color: #111;
+  }
+
+  .menu li:hover > .dropdown {
+    display: block;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+/* Container for main page layout */
+.container {
+  max-width: 1200px; /* Maximum width for large screens */
+  margin: 0 auto; /* Center the container */
+  padding: var(--spacing-lg); /* Add padding around content */
+  min-height: 100vh; /* Fill viewport height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  padding-top: 15rem;
+}
+
+/* Header section styles */
+.header {
+  display: flex; /* Use flexbox for header layout */
+  justify-content: space-between; /* Space items apart */
+  align-items: center; /* Center items vertically */
+  margin-bottom: var(--spacing-xl); /* Add space below header */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  gap: var(--spacing-sm); /* Add gap between items when wrapped */
+}
+
+/* Main title styling */
+.title {
+  font-family: var(--font-pixel); /* Use pixel font */
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsive font size */
+  color: var(--text-light); /* White text color */
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* New Build button styling */
+.new-build-btn {
+  background: var(--accent-blue); /* Bright blue background */
+  color: var(--text-light); /* White text */
+  border: none; /* Remove default border */
+  padding: var(--spacing-sm) var(--spacing-md); /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  font-family: var(--font-pixel); /* Use pixel font */
+  font-size: 0.875rem; /* Smaller font size for button */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 12px rgba(193, 193, 193, 0.3); /* Glowing shadow */
+}
+
+/* Hover effect for New Build button */
+.new-build-btn:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 6px 16px rgba(193, 193, 193, 0.3); /* Enhanced glow on hover */
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Take remaining vertical space */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+/* Build card styling */
+.build-card {
+  background: var(--border-color); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect for modern glass look */
+  border-radius: 16px; /* Rounded corners */
+  padding: var(--spacing-xl); /* Add padding inside card */
+  text-align: center; /* Center align text */
+  max-width: 600px; /* Maximum width for card */
+  width: 100%; /* Full width up to max-width */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+}
+
+/* Container for character sprites */
+.characters-container {
+  margin-bottom: var(--spacing-lg); /* Space below characters */
+}
+
+/* Character sprites styling */
+.characters-sprite {
+  width: 150px; /* Set width for sprite */
+  height: auto; /* Maintain aspect ratio */
+  animation: float 3s ease-in-out infinite; /* Apply floating animation */
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Add shadow to sprite */
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-10px); /* Middle position (floating up) */
+  }
+}
+
+/* Build title styling */
+.build-title {
+  font-family: var(--font-body); /* Use pixel font */
+  font-size: clamp(1.25rem, 3vw, 1.75rem); /* Responsive font size */
+  color: var(--text-light); /* Dark blue color */
+  margin-bottom: var(--spacing-md); /* Space below title */
+  line-height: 1.4; /* Better line height for pixel font */
+}
+
+/* Build description text */
+.build-description {
+  color: var(--text-light); /* Dark blue text */
+  font-size: 1.1rem; /* Slightly larger font */
+  margin-bottom: var(--spacing-lg); /* Space below description */
+  line-height: 1.7; /* Improved readability */
+}
+
+/* Tutorial link styling */
+.tutorial-link {
+  color: var(--accent-blue); /* Bright blue color */
+  text-decoration: underline; /* Underline for link indication */
+  font-weight: 500; /* Medium font weight */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Create Build button styling */
+.create-build-btn {
+  background: var(--accent-blue); /* Bright blue background */
+  color: var(--text-light); /* White text */
+  border: none; /* Remove default border */
+  padding: var(--spacing-md) var(--spacing-xl); /* Add generous padding */
+  border-radius: 12px; /* Rounded corners */
+  font-family: var(--font-pixel); /* Use pixel font */
+  font-size: 1rem; /* Standard font size */
+  cursor: pointer; /* Show pointer cursor */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 6px 20px rgba(193, 193, 193, 0.3); /* Glowing shadow */
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
+}
+.create-build-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+/* Hover effect for Create Build button */
+.create-build-btn:hover {
+  background: var(--accent-blue); /* Green background on hover */
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 8px 24px rgba(193, 193, 193, 0.3); /* Green glow on hover */
+}
+
+/* LOGIN PAGE STYLES */
+
+/* Login page body styling */
+.login-page {
+  background-image: url("/assest/background\ secand\ page.png"); /* Stars background */
+  background-color: rgb(13, 18, 78);
+  background-size: cover; /* Cover entire viewport */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Don't repeat background */
+  background-attachment: fixed; /* Fixed background for parallax effect */
+}
+
+/* Login container layout */
+.login-container {
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding: var(--spacing-lg); /* Add padding */
+  gap: var(--spacing-xl); /* Space between sections */
+}
+
+/* Login header section */
+.login-header {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center items vertically */
+  gap: var(--spacing-lg); /* Space between computer and text */
+  margin-bottom: var(--spacing-lg); /* Space below header */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  justify-content: center; /* Center items */
+}
+
+/* Computer image container */
+.computer-container {
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+/* Computer image styling */
+.computer-image {
+  width: 120px; /* Set width for computer */
+  height: auto; /* Maintain aspect ratio */
+  animation: pulse 2s ease-in-out infinite; /* Subtle pulsing animation */
+  filter: drop-shadow(0 4px 12px rgba(193, 193, 193, 0.5)); /* Glowing effect */
+}
+
+/* Pulsing animation for computer */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.05); /* Slightly larger */
+  }
+}
+
+/* Message container styling */
+.message-container {
+  font-family: var(--font-pixel);
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+  padding: var(--spacing-md); /* Add padding */
+  border-radius: 12px; /* Rounded corners */
+  border: 2px solid var(--accent-blue); /* Blue border */
+  position: relative; /* For speech bubble effect */
+  max-width: 600px; /* Maximum width */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+/* Speech bubble tail */
+.message-container::before {
+  content: ""; /* Empty content for pseudo-element */
+  position: absolute; /* Position absolutely */
+  left: -10px; /* Position to the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for exact centering */
+  width: 0; /* No width */
+  height: 0; /* No height */
+  border-top: 10px solid transparent; /* Transparent top border */
+  border-bottom: 10px solid transparent; /* Transparent bottom border */
+  border-right: 10px solid rgba(255, 255, 255, 0.95); /* White right border for tail */
+}
+
+/* Typed message text */
+.typed-message {
+  color: var(--secondary-bg); /* Dark blue text */
+  font-family: var(--font-pixel); /* Body font */
+  font-size: 1rem; /* Standard font size */
+  margin: 0; /* Remove default margin */
+  line-height: 1.5; /* Good readability */
+}
+
+/* Login form container */
+.login-form-container {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Maximum width */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+}
+
+/* Login card styling */
+.login-card {
+  background: var(--card-bg); /* Semi-transparent white */
+  backdrop-filter: blur(15px); /* Stronger blur effect */
+  border-radius: 16px; /* Rounded corners */
+  padding: var(--spacing-xl); /* Generous padding */
+  width: 100%; /* Full width of container */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Large shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+}
+
+/* Social buttons container */
+.social-buttons {
+  display: flex; /* Use flexbox layout */
+  gap: var(--spacing-sm); /* Space between buttons */
+  margin-bottom: var(--spacing-lg); /* Space below social buttons */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+/* Social button styling */
+.social-btn {
+  flex: 1; /* Equal width for both buttons */
+  padding: var(--spacing-sm) var(--spacing-md); /* Add padding */
+  border: 2px solid var(--border-color); /* Border for buttons */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  color: var(--secondary-bg); /* Dark text */
+  border-radius: 8px; /* Rounded corners */
+  font-family: var(--font-pixel); /* Body font */
+  font-weight: 500; /* Medium weight */
+  cursor: pointer; /* Pointer cursor */
+  transition: all 0.3s ease; /* Smooth transitions */
+  display: flex; /* Flexbox for icon and text */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  gap: var(--spacing-xs); /* Space between icon and text */
+  min-width: 120px; /* Minimum width */
+}
+
+/* Social button hover effects */
+.social-btn:hover {
+  background: rgba(255, 255, 255, 1); /* Solid white on hover */
+  border-color: var(--accent-blue); /* Blue border on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+/* Icon styling within social buttons */
+.social-btn .icon {
+  font-weight: bold; /* Bold icon text */
+  font-size: 1.1em; /* Slightly larger icon */
+}
+
+/* Separator section */
+.separator {
+  text-align: center; /* Center the separator */
+  margin: var(--spacing-lg) 0; /* Vertical margin */
+  position: relative; /* For line positioning */
+}
+
+/* Separator text */
+.separator-text {
+  background: var(--card-bg); /* Match card background */
+  padding: 0 var(--spacing-sm); /* Horizontal padding */
+  color: var(--text-muted); /* Muted text color */
+  font-size: 0.875rem; /* Smaller font */
+  font-weight: 500; /* Medium weight */
+}
+
+/* Separator line */
+.separator::before {
+  content: ""; /* Empty content */
+  position: absolute; /* Position absolutely */
+  top: 50%; /* Center vertically */
+  left: 0; /* Start from left */
+  right: 0; /* Extend to right */
+  height: 1px; /* Thin line */
+  background: var(--border-color); /* Border color */
+  z-index: -1; /* Behind the text */
+}
+
+/* Login form styling */
+.login-form {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack vertically */
+  gap: var(--spacing-md); /* Space between form elements */
+  margin-bottom: var(--spacing-lg); /* Space below form */
+}
+
+/* Form input styling */
+.form-input {
+  padding: var(--spacing-sm) var(--spacing-md); /* Add padding */
+  border: 2px solid var(--border-color); /* Border */
+  border-radius: 8px; /* Rounded corners */
+  font-family: var(--font-body); /* Body font */
+  font-size: 1rem; /* Standard font size */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  color: var(--secondary-bg); /* Dark text */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Input focus state */
+.form-input:focus {
+  outline: none; /* Remove default outline */
+  border-color: var(--accent-blue); /* Blue border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2); /* Focus ring */
+  background: rgba(255, 255, 255, 1); /* Solid white background */
+}
+
+/* Placeholder text styling */
+.form-input::placeholder {
+  color: var(--text-muted); /* Muted color for placeholder */
+  opacity: 0.8; /* Slight transparency */
+}
+
+/* Sign up button styling */
+.signup-btn {
+  background: var(--accent-blue); /* Green background */
+  color: var(--text-light); /* White text */
+  border: none; /* No border */
+  padding: var(--spacing-md); /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  font-family: var(--font-pixel); /* Body font */
+  font-size: 0, 5rem; /* Slightly larger font */
+  font-weight: 400; /* Semi-bold weight */
+  cursor: pointer; /* Pointer cursor */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 16px rgba(13, 92, 96, 0.3); /* Green glow */
+}
+
+/* Sign up button hover effect */
+.signup-btn:hover {
+  background: #3abcd9; /* Brighter green on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 6px 20px rgba(6, 67, 73, 0.4); /* Enhanced glow */
+}
+
+/* Terms text styling */
+.terms-text {
+  font-size: 0.875rem; /* Smaller font */
+  color: var(--text-muted); /* Muted color */
+  text-align: center; /* Center text */
+  margin-bottom: var(--spacing-md); /* Space below */
+  line-height: 1.5; /* Good readability */
+}
+
+/* Login link text */
+.login-link {
+  font-size: 0.9rem; /* Slightly smaller font */
+  color: var(--secondary-bg); /* Dark color */
+  text-align: center; /* Center text */
+  margin: 0; /* Remove default margin */
+}
+
+/* Link styling within login link */
+.login-link .link {
+  color: var(--accent-blue); /* Blue color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Semi-bold */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Link hover effect */
+.login-link .link:hover {
+  color: var(--accent-green); /* Green on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  /* Adjust container padding for tablets */
+  .container {
+    padding: var(--spacing-md); /* Reduce padding */
+  }
+
+  /* Stack header items on tablets */
+  .header {
+    flex-direction: column; /* Stack vertically */
+    text-align: center; /* Center align */
+    gap: var(--spacing-md); /* Increase gap */
+  }
+
+  /* Reduce card padding on tablets */
+  .build-card {
+    padding: var(--spacing-lg); /* Less padding */
+  }
+
+  /* Stack login header on tablets */
+  .login-header {
+    flex-direction: column; /* Stack vertically */
+    text-align: center; /* Center align */
+    gap: var(--spacing-md); /* Adjust gap */
+  }
+
+  /* Reduce login card padding on tablets */
+  .login-card {
+    padding: var(--spacing-lg); /* Less padding */
+  }
+
+  /* Stack social buttons on tablets */
+  .social-buttons {
+    flex-direction: column; /* Stack vertically */
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  /* Further reduce container padding for mobile */
+  .container,
+  .login-container {
+    padding: var(--spacing-sm); /* Minimal padding */
+  }
+
+  /* Adjust title size for mobile */
+  .title {
+    font-size: 1.25rem; /* Smaller font size */
+  }
+
+  /* Smaller button text for mobile */
+  .new-build-btn {
+    font-size: 0.75rem; /* Smaller font */
+    padding: var(--spacing-xs) var(--spacing-sm); /* Less padding */
+  }
+
+  /* Reduce build card padding for mobile */
+  .build-card {
+    padding: var(--spacing-md); /* Minimal padding */
+    margin: var(--spacing-xs); /* Small margin */
+  }
+
+  /* Smaller character sprites on mobile */
+  .characters-sprite {
+    width: 100px; /* Smaller width */
+  }
+
+  /* Adjust build title for mobile */
+  .build-title {
+    font-size: 1rem; /* Smaller font */
+  }
+
+  /* Smaller computer image on mobile */
+  .computer-image {
+    width: 80px; /* Smaller width */
+  }
+
+  /* Reduce message container width on mobile */
+  .message-container {
+    max-width: 250px; /* Smaller max width */
+  }
+
+  /* Reduce login card padding for mobile */
+  .login-card {
+    padding: var(--spacing-md); /* Less padding */
+  }
+
+  /* Smaller form inputs on mobile */
+  .form-input {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+}
+
+/* High resolution display support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure crisp rendering on retina displays */
+  .characters-sprite,
+  .computer-image {
+    image-rendering: -webkit-optimize-contrast; /* Webkit optimization */
+    image-rendering: pixelated; /* Maintain pixel art crispness */
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  /* Disable animations for users who prefer reduced motion */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important; /* Nearly instant animations */
+    animation-iteration-count: 1 !important; /* Single iteration */
+    transition-duration: 0.01ms !important; /* Nearly instant transitions */
+  }
+}
+
+/* Focus visible styles for better keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--accent-blue); /* Blue outline */
+  outline-offset: 2px; /* Space between element and outline */
+}
+
+/* Print styles */
+@media print {
+  /* Hide interactive elements when printing */
+  .new-build-btn,
+  .create-build-btn,
+  .social-btn,
+  .signup-btn {
+    display: none; /* Hide buttons */
+  }
+
+  /* Adjust colors for printing */
+  body {
+    background: white; /* White background */
+    color: black; /* Black text */
+  }
+
+  /* Ensure card backgrounds are visible when printing */
+  .build-card,
+  .login-card {
+    background: white; /* White background */
+    border: 1px solid black; /* Black border */
+    box-shadow: none; /* Remove shadows */
+  }
+}
+
+/* FOOTER*/
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: grey;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 0.9em;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* السوشال ميديا */
+.social a {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.4em;
+  transition: opacity 0.3s ease;
+  color: inherit;
+}
+
+.social a.instagram {
+  color: #e1306c;
+}
+.social a.twitter {
+  color: #1da1f2;
+}
+.social a.github {
+  color: #333;
+}
+.social a.youtube {
+  color: #ff0000;
+}
+.social a.linkedin {
+  color: #0077b5;
+}
+.social a.spotify {
+  color: #1db954;
+}
+
+.social a:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-left {
+    gap: 10px;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+}
