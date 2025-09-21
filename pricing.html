@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project CodeArt</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Press+Start+2P?query=Press+Start+2P">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./Pricing.css">
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="bar">
+    <div class="logo">
+      <a href="#">CodeArt</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu" id="menu">
+      <li class="has-dropdown">
+        <a href="#">Learn <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li><h4>Web Development</h4></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><h4>Tools</h4></li>
+            <li><a href="#">Command Line</a></li>
+            <li><a href="#">Git & GitHub</a></li>
+            <li><a href="#">GitHub Copilot</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Build</a></li>
+      <li class="has-dropdown">
+        <a href="#">Community <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Leaderboards</a></li>
+            <li><a href="#">Project Showcase</a></li>
+            <li><a href="#">Monthly Challenge</a></li>
+            <li><a href="#">#30NitesOfCode</a></li>
+            <li><a href="#">Worlds</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+    <div class="right">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-solid fa-moon"></i></a>
+      <a href="#" class="SignUpButton">Sign up</a>
+    </div>
+  </nav>
+   
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <h1 class="main-title">Join the Club</h1>
+    <p class="subtitle">
+      Unlock your full potential with our tailored plans designed for every stage of your coding journey.
+    </p>
+
+    <!-- toggle + plans داخل نفس container -->
+    <div class="pricing-container">
+      <!-- Toggle -->
+      <div class="toggle">
+        <input type="radio" id="yearly" name="billing">
+        <label for="yearly">Yearly</label>
+
+        <input type="radio" id="monthly" name="billing" checked>
+        <label for="monthly">Monthly</label>
+      </div>
+
+      <!-- Plans -->
+      <div class="plans">
+        <!-- Explorer -->
+        <div class="plan free">
+          <h2>Explorer</h2>
+        <div class="images">
+          <img src="assets/img/img3.svg">
+        </div>
+          <p class="price">Free <span>forever</span></p>
+          <p class="desc">
+            Explore the world of coding with basic access to our learning content and community.
+          </p>
+          <a href="#" class="btn free-btn">Start for free</a>
+          <ul>
+            <li>✔ Access to first few chapters in many courses</li>
+            <li>✔ Access to community and events</li>
+          </ul>
+        </div>
+        
+        <!-- Club -->
+        <div class="plan club">
+          <div class="badge">SAVE 34%</div>
+          <h2>CLUB</h2>
+          <p class="price monthly">$14.99 <span>/ month</span></p>
+          <p class="price yearly">$9.99 <span>/ month</span></p>
+          <div class="images">
+            <img src="assets/img/img2.svg">
+          </div>
+          <p class="desc">
+            Commit to your goals with full access to courses and personalized support as you learn.
+          </p>
+          <a href="#" class="btn club-btn">Join Club</a>
+          <p class="extra-title">Everything in Explorer, plus...</p>
+          <ul>
+            <li>✔ Full access to Club-only content</li>
+            <li>✔ One-on-one support from experts</li>
+            <li>+ and more!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- <-- Hero Section --> 
+  <section class="hero-section">
+    <div class="image">
+      <img src="assets/img/img.gif" alt="Hero Image">
+    </div>
+    <div class="content">
+      <h1>Start your coding adventure today.</h1>
+      <p>Commit to your goals with Codédex Club—for as low as $9.99/month.</p>
+      <a href="#" class="btn">Join Club</a>
+    </div>
+  </section>
+<!-- FOOTER -->
+    
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="logo">
+        <a href="#">CodeArt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="#">All Courses</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="#">Command Line</a></li>
+          <li><a href="#">Git &amp; GitHub</a></li>
+          <li><a href="#">GitHub Copilot</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" aria-hidden="false">
+      <div class="footer-left">
+        <div>© 2025 Niteowl, Inc.</div>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="social" aria-label="social links">
+        <a href="#" title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="GitHub" class="github"><i class="fab fa-github"></i></a>
+        <a href="#" title="YouTube" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="LinkedIn" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="TikTok" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" title="Spotify" class="spotify"><i class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+    hamburger.addEventListener("click", () => {
+      menu.classList.toggle("active");
+  });
+  </script>
+</body>
+</html>
+
+  

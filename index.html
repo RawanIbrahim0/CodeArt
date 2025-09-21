@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CodeArt</title>
+    <!-- In your <head> -->
+    <!-- Fonts //Roboto and //Press Start 2P -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="bar">
+    <div class="logo">
+      <a href="#">CodeArt</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu" id="menu">
+      <li class="has-dropdown">
+        <a href="#">Learn <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li><h4>Web Development</h4></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><h4>Tools</h4></li>
+            <li><a href="#">Command Line</a></li>
+            <li><a href="#">Git & GitHub</a></li>
+            <li><a href="#">GitHub Copilot</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Build</a></li>
+      <li class="has-dropdown">
+        <a href="#">Community <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Leaderboards</a></li>
+            <li><a href="#">Project Showcase</a></li>
+            <li><a href="#">Monthly Challenge</a></li>
+            <li><a href="#">#30NitesOfCode</a></li>
+            <li><a href="#">Worlds</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+    <div class="right">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-solid fa-moon"></i></a>
+      <a href="#" class="SignUpButton">Sign up</a>
+    </div>
+  </nav>
+    <!-- TODO remove latter -->
+    <div
+      style="
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      Nav Bar Here
+    </div>
+    <!-- !Hero Section background  -->
+    <div class="heroSection">
+      <!-- TODO  this needs to be hovering -->
+      <div class="heroImage"></div>
+      <div class="layer sky"></div>
+      <div class="layer mount"></div>
+      <div class="mascot"></div>
+      <div class="layer hill"></div>
+      <div class="layer grass"></div>
+    </div>
+    <!--! Floating Action Button -->
+    <div class="fab">
+      <img src="assets\images\codedex-bot-logo-compressed.webp" alt="" />
+    </div>
+    <!-- ! this is the Our Courses Section  -->
+    <section>
+      <div class="middle">
+        <!-- TODO this need writing animations  -->
+        <h1>Journey through the</h1>
+        <h1>world of programming</h1>
+
+        <p>
+          Learn to code with fun, interactive courses handcrafted by industry
+          experts and educators.
+        </p>
+      </div>
+    </section>
+    <!--! Horizontal scrolling  -->
+    <section>
+      <div class="storyWrapper">
+        <div class="storyContent">
+          <div class="storyItem">
+            <p>
+              Awake in a world of glowing
+              <span class="rainbowWord">
+                <span>P</span><span>i</span><span>x</span><span>e</span
+                ><span>l</span><span>s</span>
+              </span>
+            </p>
+          </div>
+          <!-- ! LEVEL UP -->
+          <div class="storyItem2">
+            <div id="learn" class="Level_up">
+              <div class="image-container" style="justify-content: start">
+                <img
+                  class="main-image"
+                  src="./assets/images/home/Illustration 1 (1).png"
+                  alt=""
+                />
+                <img
+                  class="character"
+                  src="./assets/images/home/gif/battle.gif"
+                  alt=""
+                />
+              </div>
+              <div class="text-container">
+                <p class="title">Level up your learning</p>
+                <p class="copy">
+                  Gain XP and collect badges as you complete bite-sized lessons
+                  in Python, HTML, JavaScript, and more. Our beginner-friendly
+                  curriculum makes learning to code as motivating as completing
+                  your next quest.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- !PRACTICE  -->
+          <div class="storyItem2">
+            <div id="practice" class="Practice">
+              <div class="text-container">
+                <p class="title2">Practice your coding chops</p>
+                <p class="copy2">
+                  Take yo ur skills further with code challenges and project
+                  tutorials designed to help you apply what you learned to
+                  real-world problems and examples.
+                </p>
+              </div>
+              <div
+                class="image-container two"
+                style="justify-content: center; flex: 1 1 0%"
+              >
+                <img
+                  class="editor"
+                  src="./assets/images/home/gif/Ai30sjf.gif"
+                  alt=""
+                />
+                <div class="practice-image-container">
+                  <img
+                    class="main-image_test"
+                    src="./assets/images/home/pokemoncard.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ! PORTOFOLIO -->
+          <div class="storyItem2">
+            <div id="community" class="Community" style="flex-direction: row">
+              <div class="text-container">
+                <p class="title2">Make friends along the way</p>
+                <p class="copy2">
+                  Building is so much better together than alone. Join our
+                  community forum and Discord to give and receive help,
+                  collaborate on projects, and connect over shared passions.
+                </p>
+              </div>
+              <div
+                class="image-container conversation-container"
+                style="justify-content: start"
+              >
+                <img
+                  class="conversation"
+                  src="./assets/images/home/chat-conversation.svg"
+                  alt=""
+                />
+                <img
+                  class="character-table"
+                  src="./assets/images/home/gif/qOSmiVc.gif"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ! COMMUNITY-->
+          <div class="storyItem">Are You Ready ? &nbsp;&nbsp;&nbsp;</div>
+        </div>
+      </div>
+    </section>
+    <!-- ! our courses Label  -->
+    <div class="ourCoursesLabel">
+      <div class="typewriter">Our Courses</div>
+    </div>
+    <!-- ! OurCOURSES GRID -->
+    <section>
+      <div class="grid">
+        <!-- !HTML -->
+        <div class="card">
+          <img src="assets/images/html-parralax-combined.gif" alt="HTML" />
+          <div class="card-content">
+            <h3>HTML</h3>
+            <p>
+              Create your first website with HTML and learn the building blocks
+              of the web.
+            </p>
+            <span class="level">BEGINNER</span>
+          </div>
+        </div>
+        <!-- !CSS -->
+        <div class="card">
+          <img src="assets/images/pastel skies, Ryan Haight.gif" alt="CSS" />
+          <div class="card-content">
+            <h3>Css</h3>
+            <p>
+              Learn programming fundamentals such as variables, control flow,
+              and loops with Python.
+            </p>
+            <span class="level">BEGINNER</span>
+          </div>
+        </div>
+        <!-- !JAVASCRIPT -->
+        <div class="card">
+          <img src="assets/images/JavaScript.gif" alt="JavaScript" />
+          <div class="card-content">
+            <h3>JavaScript</h3>
+            <p>
+              Learn variables, loops, functions, and events to start building
+              interactive web apps.
+            </p>
+            <span class="level">BEGINNER</span>
+          </div>
+        </div>
+        <!-- !REACT -->
+        <div class="card">
+          <img src="assets\images\React.gif" alt="React" />
+          <div class="card-content">
+            <h3>React</h3>
+            <p>
+              Learn variables, loops, functions, and events to start building
+              interactive web apps.
+            </p>
+            <span class="level">BEGINNER</span>
+          </div>
+        </div>
+        <!-- !SQL -->
+        <div class="card">
+          <img src="assets/images/SQL.gif" alt="SQL" />
+          <div class="card-content">
+            <h3>SQL</h3>
+            <p>
+              Learn database basics, queries, calculations, and more to start
+              managing and analyzing data.
+            </p>
+            <span class="level">BEGINNER</span>
+          </div>
+        </div>
+      </div>
+      <div class="ourCoursesLabel">
+        <h3>More are comming soon</h3>
+      </div>
+    </section>
+
+    <!-- !Rawan's Work -->
+    <section>
+      <div class="Our_Story">
+        <div class="title">
+          <h2>
+            <h1 class="Loved_by_our">
+              <div class="typewriter">Loved By Learners</div>
+            </h1>
+            <img src="./assets/images/home/hearticon.svg" alt="heart icon" />
+          </h2>
+        </div>
+        <div class="learner-Cards">
+          <!-- ! PERSON 1 -->
+          <div class="CardOurStory">
+            <div class="image-person">
+              <img src="./assets/images/home/women.png" alt="user image" />
+            </div>
+            <div class="OneCard_person">
+              <div
+                class="nameCard person_name"
+                style="background-color: rgb(245, 243, 255)"
+              >
+                <p>YaheaDada</p>
+              </div>
+              <div
+                class="infoCard inner-container"
+                style="background-color: rgb(221, 214, 254)"
+              >
+                <p class="information_text">
+                  CodeArt helped reignite my passion for coding after the
+                  Holiday Hackathon. Since then I have connected with people who
+                  share similar interests as I do. It feels like home. Full
+                  credits to this platform on landing my first tech job!
+                </p>
+                <div class="info">
+                  <div class="social-link item">
+                    <a target="_blank" href="/@teejay" style="all: unset">
+                      <p>@teejay</p>
+                    </a>
+                  </div>
+                  <div class="occupation item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.74561 3.17847H16.7456V7.17847H22.7456V21.1785H2.74561V7.17847H8.74561V3.17847ZM10.7456 7.17847H14.7456V5.17847H10.7456V7.17847ZM4.74561 9.17847V19.1785H20.7456V9.17847H4.74561Z"
+                        fill="#2E1065"
+                      ></path>
+                    </svg>
+                    <p>Software Developer</p>
+                  </div>
+                  <div class="location item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.74561 2.17847H5.74561V4.17847H3.74561V6.17847H1.74561V12.1785H3.74561V14.1785H5.74561V16.1785H7.74561V18.1785H9.74561V20.1785H11.7456V22.1785H13.7456V20.1785H15.7456V18.1785H17.7456V16.1785H19.7456V14.1785H21.7456V12.1785H23.7456V6.17847H21.7456V4.17847H19.7456V2.17847H15.7456V4.17847H13.7456V6.17847H11.7456V4.17847H9.74561V2.17847ZM9.74561 4.17847V6.17847H11.7456V8.17847H13.7456V6.17847H15.7456V4.17847H19.7456V6.17847H21.7456V12.1785H19.7456V14.1785H17.7456V16.1785H15.7456V18.1785H13.7456V20.1785H11.7456V18.1785H9.74561V16.1785H7.74561V14.1785H5.74561V12.1785H3.74561V6.17847H5.74561V4.17847H9.74561Z"
+                        fill="#2E1065"
+                      ></path>
+                    </svg>
+                    <p>Brooklyn, NY</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ! PERSON 1 -->
+          <div class="CardOurStory">
+            <div class="image-person">
+              <img src="./assets/images/home/men.png" alt="user image" />
+            </div>
+            <div class="OneCard_person">
+              <div
+                class="nameCard2 person_name"
+                style="background-color: rgb(247, 254, 231)"
+              >
+                <p>Rawan Ibrahim</p>
+              </div>
+              <div
+                class="infoCard2 inner-container"
+                style="background-color: rgb(217, 249, 157)"
+              >
+                <p class="information_text">
+                  The CodeArt community feels like a comforting, hot cup of
+                  matcha latte on a cold rainy day. It's a warm and cozy space
+                  to be in despite our diverse backgrounds and beginnings.
+                </p>
+                <div class="info">
+                  <div class="social-link item">
+                    <a target="_blank" href="/@teejay" style="all: unset">
+                      <p>@evangelene</p>
+                    </a>
+                  </div>
+                  <div class="occupation item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.74561 3.17847H16.7456V7.17847H22.7456V21.1785H2.74561V7.17847H8.74561V3.17847ZM10.7456 7.17847H14.7456V5.17847H10.7456V7.17847ZM4.74561 9.17847V19.1785H20.7456V9.17847H4.74561Z"
+                        fill="#2E1065"
+                      ></path>
+                    </svg>
+                    <p>Frontend Engineer</p>
+                  </div>
+                  <div class="location item">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.74561 2.17847H5.74561V4.17847H3.74561V6.17847H1.74561V12.1785H3.74561V14.1785H5.74561V16.1785H7.74561V18.1785H9.74561V20.1785H11.7456V22.1785H13.7456V20.1785H15.7456V18.1785H17.7456V16.1785H19.7456V14.1785H21.7456V12.1785H23.7456V6.17847H21.7456V4.17847H19.7456V2.17847H15.7456V4.17847H13.7456V6.17847H11.7456V4.17847H9.74561V2.17847ZM9.74561 4.17847V6.17847H11.7456V8.17847H13.7456V6.17847H15.7456V4.17847H19.7456V6.17847H21.7456V12.1785H19.7456V14.1785H17.7456V16.1785H15.7456V18.1785H13.7456V20.1785H11.7456V18.1785H9.74561V16.1785H7.74561V14.1785H5.74561V12.1785H3.74561V6.17847H5.74561V4.17847H9.74561Z"
+                        fill="#2E1065"
+                      ></path>
+                    </svg>
+                    <p>Singapore</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CountNumbers">
+          <div class="counter">
+            <p class="number learners">
+              
+  
+              <span class="counter">1067377</span><span class="num-label"></span>
+            </p>
+            <p class="label">Learners</p>
+          </div>
+          <div class="counter">
+            <p class="number countries"><span>192</span></p>
+            <p class="label">Countries</p>
+          </div>
+          <div class="counter">
+            <p class="number exercises">
+              <span>6</span><span class="num-label">m+</span>
+            </p>
+            <p class="label">Exercises</p>
+          </div>
+          <div class="counter">
+            <p class="number projects"><span>14955</span></p>
+            <p class="label">Projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- FOOTER -->
+    
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="logo">
+        <a href="#">CodeArt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="#">All Courses</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="#">Command Line</a></li>
+          <li><a href="#">Git &amp; GitHub</a></li>
+          <li><a href="#">GitHub Copilot</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" aria-hidden="false">
+      <div class="footer-left">
+        <div>© 2025 Niteowl, Inc.</div>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="social" aria-label="social links">
+        <a href="#" title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="GitHub" class="github"><i class="fab fa-github"></i></a>
+        <a href="#" title="YouTube" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="LinkedIn" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="TikTok" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" title="Spotify" class="spotify"><i class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+  </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

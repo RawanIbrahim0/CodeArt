@@ -1,0 +1,8 @@
+colors in the website 
+
+//! Dark
+the background #020617
+the secendory background #0f1524
+the grey #475569
+
+

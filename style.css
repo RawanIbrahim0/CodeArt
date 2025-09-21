@@ -1,0 +1,1188 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* color: white; */
+}
+/* 
+html {
+  cursor: url("assets/images/cursor.png"), auto;
+  } */
+
+/* Nav */
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  height: 80px;
+  padding: 0 40px;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo a {
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #ffd700;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu li a:hover {
+  color: #ffd700;
+}
+
+.dropdown-toggle {
+  font-size: 14px;
+  color: #ffd700;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #111;
+  border-radius: 6px;
+  padding: 8px 0;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.menu li:hover > .dropdown {
+  display: block;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown ul li a:hover {
+  background-color: #333;
+  color: #ffd700;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.SignUpButton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 7rem;
+  height: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: #ffbf00;
+  border: 2px solid rgb(217, 216, 216);
+  border-bottom-width: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+   clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
+}
+
+.SignUpButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1100;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border-top: 1px solid #222;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+    border-bottom: 1px solid #111;
+  }
+
+  .menu li a {
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  .dropdown {
+    position: static;
+    display: none;
+    background-color: #111;
+  }
+
+  .menu li:hover > .dropdown {
+    display: block;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+h1 {
+  color: white;
+  margin: 10px;
+}
+
+body {
+  background-color: #000410;
+  /* background-color: #0000ff; */
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-family: "Press Start 2P";
+}
+/* ! hero Section  */
+.heroSection {
+  position: relative;
+  height: 850px;
+  overflow: hidden;
+}
+.heroSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    /* ! this make it slightly darken to display text */ to bottom,
+    rgba(2, 6, 23, 0) 0%,
+    rgba(2, 6, 23, 0) 35%,
+    rgba(2, 6, 23, 0.1) 40%,
+    rgba(2, 6, 23, 0.2) 60%,
+    rgba(2, 6, 23, 0.3) 75%,
+    rgba(2, 6, 23, 0.4) 80%,
+    rgba(0, 3, 13, 0.9) 100%
+  );
+  z-index: 10;
+}
+
+.layer {
+  position: absolute;
+
+  inset: 0;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center top;
+}
+.sky {
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-image: url("assets/images/LandingPage_Sky.webp");
+}
+.mount {
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-image: url("assets/images/LandingPage_Mountain.webp");
+}
+.hill {
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-image: url("assets/images/LandingPage_Hills.webp");
+}
+.grass {
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-image: url("assets/images/LandingPage_Grass.webp");
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+
+  background-position: center bottom;
+  will-change: background-position;
+}
+
+/* TODO
+make this when big size screens move slightly to the right to be on the hill 
+*/
+.mascot {
+  position: absolute;
+  z-index: 5;
+  width: 212.188px;
+  height: 250px;
+  left: calc(-404px + 50vw);
+  top: 296px;
+  background-repeat: no-repeat;
+  max-width: 180px;
+  min-width: 100px;
+  aspect-ratio: 1/1;
+  background-image: url("assets/images/LandingPage_Mascot.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+/*! Floating Action Button  */
+.fab {
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #475569;
+  border: white solid 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+.fab img {
+  height: inherit;
+  width: inherit;
+}
+/* Journy to the programming world  */
+.middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+/* hero section image 'Coding Adventure'  */
+.heroImage {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 520px;
+  aspect-ratio: 520 / 200;
+  background-image: url("assets/images/LandingPage_Text.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 900;
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+/* ! */
+
+.storyWrapper {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #000410;
+}
+
+.storyContent {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.storyItem {
+  flex-shrink: 0;
+  margin: 0 3rem;
+  font-family: "Press Start 2P", cursive;
+  font-size: 150px;
+  color: #fff;
+  white-space: nowrap;
+}
+.storyItem2 {
+  flex-shrink: 0;
+  margin: 0 3rem;
+  font-size: 150px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.rainbowWord span {
+  font-family: "Press Start 2P", cursive;
+  font-size: 150px;
+  display: inline-block;
+  margin: 0 2px;
+  color: white;
+  text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+}
+/*! rainbow Letters */
+.rainbowWord span:nth-child(1) {
+  color: #ff0000;
+}
+.rainbowWord span:nth-child(2) {
+  color: #ff7f00;
+}
+.rainbowWord span:nth-child(3) {
+  color: #ffff00;
+}
+.rainbowWord span:nth-child(4) {
+  color: #00ff00;
+}
+.rainbowWord span:nth-child(5) {
+  color: #0000ff;
+}
+.rainbowWord span:nth-child(6) {
+  color: #8b00ff;
+}
+/* ! our courses Grid  */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 32px 24px;
+  margin: 15px;
+  /* background-color: #ff7f00; */
+}
+
+.card {
+  background-color: #12182b;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border: 2px solid #79879b;
+  transition: transform 0.2s;
+  clip-path: polygon(
+    12px 0px,
+    12px 4px,
+    8px 4px,
+    8px 8px,
+    4px 8px,
+    4px 12px,
+    0px 12px,
+    0px 16px,
+    0px calc(100% - 12px),
+    4px calc(100% - 12px),
+    4px calc(100% - 8px),
+    8px calc(100% - 8px),
+    8px calc(100% - 4px),
+    12px calc(100% - 4px),
+    12px calc(100% + 0px),
+    16px calc(100% + 0px),
+    calc(100% - 12px) calc(100% + 0px),
+    calc(100% - 12px) calc(100% - 3px),
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% + 0px) calc(100% - 12px),
+    calc(100% + 0px) calc(100% - 16px),
+    calc(100% + 0px) 12px,
+    calc(100% - 4px) 12px,
+    calc(100% - 4px) 8px,
+    calc(100% - 8px) 8px,
+    calc(100% - 8px) 4px,
+    calc(100% - 12px) 4px,
+    calc(100% - 12px) 0px,
+    calc(100% - 16px) 0px
+  );
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.level {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  background-color: #1f2a4c;
+}
+
+/* @media only screen and (min-width: 1200px) {
+  .grid {
+    margin: 0px auto;
+    max-width: 1152px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid {
+    max-width: 100%;
+    margin: 0px 24px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .grid {
+    max-width: 100%;
+    margin: 0px 16px;
+  }
+} */
+/* ! RAWAN'S WORK  */
+
+.section_About {
+  background-color: rgb(15, 21, 36);
+  color: white;
+}
+
+.Level_up,
+.Practice,
+.Portfolio,
+.Community {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  flex-direction: row;
+  padding: 5rem;
+  padding-top: 10rem;
+}
+
+/* one feild*/
+
+.image-container {
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+
+  width: 80%;
+  height: 70%;
+}
+
+.two {
+  margin-right: 2.7rem;
+}
+
+.image-container .main-image {
+  width: 80%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.image-container .character {
+  position: absolute;
+  bottom: -20%;
+  right: 10%;
+  width: 37%;
+  height: auto;
+  z-index: 1;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: start;
+  gap: 2rem;
+}
+
+.text-container .title {
+  color: rgb(255, 255, 255);
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.96px;
+  align-items: start;
+}
+
+.text-container .copy {
+  color: rgb(203, 213, 225);
+  font-family: Mulish, sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  width: 70%;
+}
+
+/* two feild */
+
+.main-image_test {
+  position: relative;
+  width: 20rem;
+  height: auto;
+  right: 6rem;
+  z-index: 2;
+}
+
+.editor {
+  position: absolute;
+  bottom: -5%;
+  right: 3.3%;
+  width: 30.5rem;
+  height: auto;
+  z-index: 1;
+}
+
+.text-container .title2 {
+  color: rgb(255, 255, 255);
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.96px;
+  align-items: start;
+  margin-left: 4%;
+  width: 70%;
+}
+
+.text-container .copy2 {
+  color: rgb(203, 213, 225);
+  font-family: Mulish, sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  width: 65%;
+  margin-left: 4%;
+}
+
+/*  third feild */
+
+.image-container .minesweaper-container {
+  width: fit-content;
+  position: relative;
+}
+
+.minesweaper-gif {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin-right: 40rem;
+}
+
+.image-container .ship {
+  right: 5rem;
+  bottom: -2rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.image-container .minsweaper-link {
+  color: rgb(203, 213, 225);
+  position: absolute;
+  bottom: -45px;
+  left: 0px;
+  font-family: Mulish, sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.image-container .minsweaper-link a {
+  color: rgb(203, 213, 225);
+}
+
+/*  Four feild */
+
+.image-container .conversation {
+  position: relative;
+  width: 80%;
+  height: auto;
+}
+
+.conversation-container .character-table {
+  position: absolute;
+  width: 15rem;
+  height: 8rem;
+  bottom: -2rem;
+  right: 5rem;
+}
+
+/*   Card Our Story */
+.Our_Story {
+  padding: 150px;
+  background: linear-gradient(rgb(2, 6, 23) 40%, rgba(2, 6, 23, 0) 150%);
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  /* background-color: grey; */
+  align-items: center;
+  gap: 5rem;
+}
+
+.Our_Story .title {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.learner-Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image-person img {
+  width: 18rem;
+  height: 12rem;
+}
+
+.CardOurStory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.OneCard_person {
+  position: relative;
+  width: 40rem;
+}
+
+.CardOurStory .OneCard_person .person_name {
+  padding: 8px 24px;
+  width: fit-content;
+  position: absolute;
+  top: -1.7rem;
+  left: 17px;
+  z-index: 1;
+}
+
+.nameCard {
+  border: 2px solid rgb(185, 162, 227);
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
+}
+
+.person_name p {
+  color: rgb(46, 16, 101);
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.72px;
+}
+
+.CardOurStory .OneCard_person .inner-container .information_text {
+  color: rgb(34, 34, 34);
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 164%;
+  letter-spacing: 0.54px;
+}
+
+.CardOurStory .OneCard_person .inner-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoCard {
+  border: 2px solid rgb(185, 162, 227);
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
+}
+
+.CardOurStory .OneCard_person .inner-container .info {
+  display: flex;
+  gap: 16px;
+}
+
+.CardOurStory .OneCard_person .inner-container .info .item {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.item p {
+  color: rgb(46, 16, 101);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 164%;
+  letter-spacing: 0.54px;
+}
+
+.nameCard2 {
+  border: 2px solid rgb(157, 196, 85);
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
+}
+
+.infoCard2 {
+  border: 2px solid rgb(157, 196, 85);
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
+}
+
+/*   numbers */
+
+.CountNumbers {
+  width: 70rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  height: fit-content;
+  margin-top: 4rem;
+}
+
+.CountNumbers .counter {
+  width: fit-content;
+  text-align: center;
+}
+
+/*  1*/
+.CountNumbers .counter .learners {
+  color: rgb(234, 179, 8);
+}
+
+.CountNumbers .counter .number {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.96px;
+}
+
+.CountNumbers .counter .label {
+  color: rgb(203, 213, 225);
+  font-family: Mulish, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.CountNumbers .counter .countries {
+  color: rgb(132, 204, 22);
+}
+.CountNumbers .counter .exercises {
+  color: rgb(139, 92, 246);
+}
+.CountNumbers .counter .projects {
+  color: rgb(236, 72, 153);
+}
+
+.ourCoursesLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+  color: #79879b;
+}
+
+/*  */
+
+.typewriter {
+  font-size: 22px;
+  white-space: pre-wrap;
+  color: white;
+  font-size: 50px;
+  font-family: "Press Start 2P";
+}
+
+.cursor {
+  color: white;
+  display: inline-block;
+  margin-left: 2px;
+  color: #7ce4ff;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+/* !  */
+.counterD {
+  font-weight: bold;
+}
+
+/* FOOTER*/
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+color:grey;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 0.9em;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* السوشال ميديا */
+.social a {
+ font-family: "Press Start 2P", cursive;
+  font-size: 1.4em;
+  transition: opacity 0.3s ease;
+  color: inherit; 
+}
+
+.social a.instagram { color: #E1306C; }
+.social a.twitter { color: #1DA1F2; }
+.social a.github { color: #333; }
+.social a.youtube { color: #FF0000; }
+.social a.linkedin { color: #0077B5; }
+.social a.spotify { color: #1DB954; }
+
+.social a:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-left {
+    gap: 10px;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+}
