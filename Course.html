@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoursesInformation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="Css/CourseStyle.css" />
   </head>
   <body>
     <!-- ! heroSection -->
-       <nav class="bar">
+
+       <!-- Nav Bar -->
+
+     <nav class="bar">
     <div class="logo">
       <a href="./index.html">CodeArt</a>
     </div>
@@ -17,14 +22,18 @@
     </div>
     <ul class="menu" id="menu">
       <li class="has-dropdown">
-        <a href="#">Learn <span class="dropdown-toggle">▼</span></a>
+        <a href="./index.html">Learn <span class="dropdown-toggle">▼</span></a>
         <div class="dropdown">
           <ul>
-            <li><h4>Web Development</h4></li>
+            <li>
+              <h4>Web Development</h4>
+            </li>
             <li><a href="#">HTML</a></li>
             <li><a href="#">CSS</a></li>
             <li><a href="#">JavaScript</a></li>
-            <li><h4>Tools</h4></li>
+            <li>
+              <h4>Tools</h4>
+            </li>
             <li><a href="#">Command Line</a></li>
             <li><a href="#">Git & GitHub</a></li>
             <li><a href="#">GitHub Copilot</a></li>
@@ -53,18 +62,18 @@
       <a href="./signUp.html" class="SignUpButton">Sign up</a>
     </div>
   </nav>
-   
+
     <section>
       <div class="CouserSection">
         <div class="layer CourseImage1"></div>
         <div class="layer CourseImage2"></div>
         <div class="CourseHeroText">
           <h1>HTMl</h1>
-          <p>
+          <p style="font-size: 20px;">
             Create your first website with HTML, the building blocks of the web
             and dive into the world of web development.
           </p>
-          <button>Start For Free</button>
+          <button class="SignUpButton" style="font-size: 10px; width: 12rem;">Start For Free</button>
         </div>
       </div>
     </section>
@@ -75,7 +84,7 @@
           <div class="accordion-item">
             <div class="accordion-header">
               <span
-                ><div class="number">1</div>
+                ><div class="number" style="font-family:Press Start 2P,cursive;">1</div>
                 Elements</span
               >
               <div class="chevron">▼</div>
