@@ -1109,9 +1109,10 @@ make this when big size screens move slightly to the right to be on the hill
 }
 
 .footer-col h4 {
+    font-family: "Press Start 2P", cursive;
   font-size: 1.2em;
   margin-bottom: 15px;
-  color: grey;
+  color: rgb(223, 169, 5);
 }
 
 .footer-col ul {
