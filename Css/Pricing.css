@@ -14,8 +14,9 @@ a:hover,
 .SignUpButton:hover,
 [role="button"]:hover,
 input[type="submit"]:hover {
-    cursor: url("./assets/images/download\ \(1\).png") 16 16, grabbing;
+  cursor: url("../assets/images/home/download\ \(1\).png") 16 16, grabbing;
 }
+
 /* Body */
 body {
   font-family: sans-serif;
