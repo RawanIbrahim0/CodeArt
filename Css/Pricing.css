@@ -29,6 +29,7 @@ body {
 }
 
 /* Nav */
+
 .bar {
   display: flex;
   align-items: center;
@@ -532,6 +533,7 @@ body {
 }
 
 /* FOOTER*/
+
 .site-footer {
   background-color: #000;
   color: #fff;
