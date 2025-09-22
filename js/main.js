@@ -85,20 +85,20 @@ function gsapTypewriter(el, speed = 0.08) {
 document.querySelectorAll(".typewriter").forEach((el, i) => {
   gsapTypewriter(el, 0.08 + i * 0.01);
 });
-// ! Counter 
-    const counter = document.querySelector(".counterD");
-    const target = parseInt(counter.textContent); // read number from HTML
+// ! Counter
+const counter = document.querySelector(".counterD");
+const target = parseInt(counter.textContent); // read number from HTML
 
-    const obj = { value: 0 };
+const obj = { value: 0 };
 
-    gsap.to(obj, {
-      value: target,
-      duration: 3,
-      roundProps: "value",
-      onUpdate: () => {
-        counter.textContent = obj.value;
-      },
-      ease: "power1.out"
-    });
+gsap.to(obj, {
+  value: target,
+  duration: 3,
+  roundProps: "value",
+  onUpdate: () => {
+    counter.textContent = obj.value;
+  },
+  ease: "power1.out",
+});
 
-  
+// ! Courses

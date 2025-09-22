@@ -48,13 +48,13 @@ h1 {
 .CourseImage1 {
   background-size: auto 100%;
   background-repeat: repeat-x;
-  background-image: url("html-banner-background.png");
+  background-image: url("../assets/html-banner-background.png");
 }
 .CourseImage2 {
   background-position: center left;
   background-size: auto 100%;
   background-repeat: repeat-x;
-  background-image: url("html-banner-foreground.gif");
+  background-image: url("../assets/html-banner-foreground.gif");
 }
 
 .CourseHeroText h1 {
