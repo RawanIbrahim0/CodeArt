@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeArt — Community page </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="./Css/Community.css">
+</head>
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="bar">
+    <div class="logo">
+      <a href="./index.html">CodeArt</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu" id="menu">
+      <li class="has-dropdown">
+        <a href="./index.html">Learn <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li>
+              <h4>Web Development</h4>
+            </li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li>
+              <h4>Tools</h4>
+            </li>
+            <li><a href="#">Command Line</a></li>
+            <li><a href="#">Git & GitHub</a></li>
+            <li><a href="#">GitHub Copilot</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="./Build.html">Build</a></li>
+      <li class="has-dropdown">
+        <a href="./Community.html">Community <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Leaderboards</a></li>
+            <li><a href="#">Project Showcase</a></li>
+            <li><a href="#">Monthly Challenge</a></li>
+            <li><a href="#">#30NitesOfCode</a></li>
+            <li><a href="#">Worlds</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="./pricing.html">Pricing</a></li>
+    </ul>
+    <div class="right">
+      <a href="#"><i class="fa-solid fa-magnifying-glass" style="font-size: 20px;"></i></a>
+      <a href="#"><i class="fa-solid fa-moon" style="font-size: 22px;"></i></a>
+      <a href="./signUp.html" class="SignUpButton">Sign up</a>
+    </div>
+  </nav>
+
+  <main class="layout" style="padding-top:7rem;">
+
+    <aside class="left-column" aria-label="Community channels">
+      <div class="channel-banner">
+        <img src="./assets/commImage/bouncer.gif" alt="Community banner" />
+        <div class="banner-copy">
+          <h2 style="font-family:'Press Start 2P', cursive; font-size:1rem;">CodeArt-X Community</h2>
+          <p>Let's make magic together ⋆˙⟡</p>
+        </div>
+      </div>
+
+      <div class="channels">
+        <h3 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Priority</h3>
+        <ul>
+          <li class="channel current"><a href="#">Home</a></li>
+          <li class="channel"><a href="#">Leaderboards</a></li>
+          <li class="channel"><a href="#">Project Showcase</a></li>
+          <li class="channel"><a href="#">Monthly Challenge</a></li>
+        </ul>
+
+        <h3 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Channels</h3>
+        <ul>
+          <li class="channel"><a href="#">General</a></li>
+          <li class="channel"><a href="#">Question of the Week</a></li>
+          <li class="channel"><a href="#">Introductions</a></li>
+          <li class="channel"><a href="#">JavaScript</a></li>
+          <li class="channel"><a href="#">Web Development</a></li>
+        </ul>
+      </div>
+
+      <div class="guidelines">
+        <strong style="font-family:'Press Start 2P', cursive; font-size:0.9rem;">Community Guidelines</strong>
+        <p>Be kind. Help each other. Share learnings.</p>
+      </div>
+    </aside>
+
+    <section class="center-column" aria-label="Community feed">
+      <div class="feed-controls">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="top" style="font-family:'Press Start 2P', cursive; font-size:0.8rem;">Top Posts</button>
+          <button class="filter-btn" data-filter="new" style="font-family:'Press Start 2P', cursive; font-size:0.8rem;">Newest</button>
+        </div>
+        <div class="feed-actions">
+          <button id="newPostBtn" class="btn" style="font-family:'Press Start 2P', cursive; font-size:0.8rem;">New Post</button>
+        </div>
+      </div>
+
+      <div id="posts" class="posts" aria-live="polite"></div>
+
+      <div id="loadMoreWrap" class="load-more">
+        <button id="loadMore" class="btn">Load more</button>
+      </div>
+    </section>
+
+    <aside class="right-column" aria-label="News & events">
+      <div class="events">
+        <h4 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Upcoming</h4>
+        <ul id="eventsList"></ul>
+      </div>
+      <div class="news">
+        <h4 style="font-family:'Press Start 2P', cursive; font-size:1rem;">News</h4>
+        <p><a href="#">GitHub Copilot Partnership</a></p>
+      </div>
+    </aside>
+  </main>
+
+<!-- FOOTER -->
+  
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="logo">
+        <a href="#">CodeArt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="#">All Courses</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="#">Command Line</a></li>
+          <li><a href="#">Git &amp; GitHub</a></li>
+          <li><a href="#">GitHub Copilot</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" aria-hidden="false">
+      <div class="footer-left">
+        <div>© 2025 Niteowl, Inc.</div>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="social" aria-label="social links">
+        <a href="#" title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="GitHub" class="github"><i class="fab fa-github"></i></a>
+        <a href="#" title="YouTube" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="LinkedIn" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="TikTok" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" title="Spotify" class="spotify"><i class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <template id="postTemplate">
+    <article class="post">
+      <div class="post-head">
+        <img class="avatar" src="./assets/commImage/sonny_avatar.png" alt="author avatar">
+        <div class="meta">
+          <div class="author"><a href="#" class="author-name"></a> <span class="rank"></span></div>
+          <div class="submeta"><span class="channel-link"></span> · <time class="timeago"></time></div>
+        </div>
+      </div>
+      <div class="post-body">
+        <p class="post-text"></p>
+        <div class="post-media"></div>
+      </div>
+      <div class="post-actions">
+        <button class="action like">♥ <span class="count like-count">0</span></button>
+        <button class="action comment">💬 <span class="count comment-count">0</span></button>
+        <button class="action share">🔗</button>
+      </div>
+    </article>
+  </template>
+
+  <div id="newPostModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <h3 id="modalTitle" style="font-family:'Press Start 2P', cursive; font-size:0.8rem;" >Create New Post</h3>
+      <form id="newPostForm">
+        <label>Author<br><input type="text" id="npAuthor" required></label>
+        <label>Title / Text<br><textarea id="npText" rows="4" required></textarea></label>
+        <label>Channel<br><input type="text" id="npChannel" value="General"></label>
+        <label>Avatar URL (optional)<br><input type="url" id="npAvatar" placeholder=""></label>
+        <div class="modal-actions">
+          <button type="submit" class="btn">Post</button>
+          <button type="button" id="npCancel" class="btn btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/community.js" defer></script>
+</body>
+</html>

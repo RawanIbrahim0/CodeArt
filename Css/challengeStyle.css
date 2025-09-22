@@ -3,6 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+html {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=),
+    auto;
+}
+
+button:hover,
+a:hover,
+.SignUpButton:hover,
+[role="button"]:hover,
+input[type="submit"]:hover {
+  cursor: url("../assets/images/home/download\ \(1\).png") 16 16, grabbing;
+}
+
 /* Add this to your CSS */
 body {
   font-family: "Arial", sans-serif;
@@ -91,14 +106,58 @@ img {
   background: #38bdf8;
   width: 250px;
   color: #0f172a;
-  border: none;
   padding: 8px 15px;
   margin: 5px 10px;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 4px;
   transition: all 0.2s ease;
+   border: 2px solid #1780ad;
+  border-bottom-width: 5px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
 }
+
+.run-button:active {
+    transform: translateY(2px); 
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15); 
+    border-bottom-width: 2px;
+}
+
+
 
 .run-button:hover {
   background: #22d3ee;
