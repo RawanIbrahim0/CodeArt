@@ -86,7 +86,7 @@ document.querySelectorAll(".typewriter").forEach((el, i) => {
   gsapTypewriter(el, 0.08 + i * 0.01);
 });
 // ! Counter
-const counter = document.querySelector(".counterD");
+const counter = document.querySelector(".counterO");
 const target = parseInt(counter.textContent); // read number from HTML
 
 const obj = { value: 0 };
@@ -96,9 +96,45 @@ gsap.to(obj, {
   duration: 3,
   roundProps: "value",
   onUpdate: () => {
-    counter.textContent = obj.value;
+    counter.te = obj.value;
   },
   ease: "power1.out",
 });
 
-// ! Courses
+/// Count number 
+window.addEventListener('DOMContentLoaded', () => {
+
+  function animateCounter(counter, target, duration = 1000) {
+    let start = 0;
+    const stepTime = Math.max(10, Math.floor(duration / target));
+    
+    function updateCounter() {
+      start++;
+      if (start <= target) {
+        counter.textContent = start.toLocaleString();
+        setTimeout(updateCounter, stepTime);
+      }
+    }
+
+    updateCounter();
+  }
+
+  function resetAndAnimateAll() {
+    const counters = document.querySelectorAll('.counterO');
+
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target'));
+      if (!isNaN(target)) {
+        counter.textContent = '0';
+        animateCounter(counter, target);
+      }
+    });
+  }
+
+  resetAndAnimateAll();
+
+  setInterval(() => {
+    resetAndAnimateAll();
+  }, 6000); 
+});
+
