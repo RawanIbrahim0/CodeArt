@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Add this to your CSS */
+body {
+  font-family: "Arial", sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  height: 100vh;
+  margin: 0;
+  padding-top: 80px; /* Offset for the fixed navbar */
+  overflow: hidden; /* Optional: prevent scrolling issues */
+}
+
+/* Optional: make container fill remaining height */
+.container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80px); /* Full height minus navbar */
+}
+
+.problem {
+  background: #1e293b;
+  padding: 20px;
+  overflow-y: auto;
+  min-width: 300px;
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+h3 {
+  color: #facc15;
+  margin-top: 15px;
+}
+p,
+li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+code {
+  background: #111827;
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: #facc15;
+}
+img {
+  max-width: 100%;
+  margin: 10px 0;
+  border: 2px solid #697182;
+  border-radius: 4px;
+}
+
+/* --- Resizer --- */
+.resizer {
+  width: 5px;
+  background: #697182;
+  cursor: col-resize;
+}
+
+.code-area {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.section-label {
+  background: #1e293b;
+  padding: 8px 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #697182;
+  color: #38bdf8;
+  user-select: none;
+}
+
+.editor {
+  background: #002451;
+  padding: 15px;
+  font-family: monospace;
+  overflow-y: auto;
+  flex: 1;
+  outline: none;
+  /* white-space: pre; */
+}
+
+.run-button {
+  background: #38bdf8;
+  width: 250px;
+  color: #0f172a;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.run-button:hover {
+  background: #22d3ee;
+}
+
+.resizer-row {
+  height: 5px;
+  background: #697182;
+  cursor: row-resize;
+}
+
+.console {
+  background: #111827;
+  padding: 15px;
+  font-family: monospace;
+  color: #10b981;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 50px;
+  white-space: pre-wrap;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  height: 80px;
+  padding: 0 40px;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo a {
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #ffd700;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu li a:hover {
+  color: #ffd700;
+}
+
+.dropdown-toggle {
+  font-size: 14px;
+  color: #ffd700;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #111;
+  border-radius: 6px;
+  padding: 8px 0;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.menu li:hover > .dropdown {
+  display: block;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown ul li a:hover {
+  background-color: #333;
+  color: #ffd700;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.SignUpButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: #ffbf00;
+  border: 2px solid #ac941a;
+  border-bottom-width: 5px;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
+}
+
+.SignUpButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1100;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border-top: 1px solid #222;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+    border-bottom: 1px solid #111;
+  }
+
+  .menu li a {
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  .dropdown {
+    position: static;
+    display: none;
+    background-color: #111;
+  }
+
+  .menu li:hover > .dropdown {
+    display: block;
+  }
+
+  .right {
+    display: none;
+  }
+}

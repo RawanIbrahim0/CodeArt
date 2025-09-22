@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Challenge</title>
+    <link rel="stylesheet" href="Css/challengeStyle.css" />
+  </head>
+  <body>
+    <nav class="bar">
+      <div class="logo">
+        <a href="./index.html">CodeArt</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="menu" id="menu">
+        <li class="has-dropdown">
+          <a href="#">Learn <span class="dropdown-toggle">▼</span></a>
+          <div class="dropdown">
+            <ul>
+              <li><h4>Web Development</h4></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><h4>Tools</h4></li>
+              <li><a href="#">Command Line</a></li>
+              <li><a href="#">Git & GitHub</a></li>
+              <li><a href="#">GitHub Copilot</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./Build.html">Build</a></li>
+        <li class="has-dropdown">
+          <a href="#">Community <span class="dropdown-toggle">▼</span></a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">Leaderboards</a></li>
+              <li><a href="#">Project Showcase</a></li>
+              <li><a href="#">Monthly Challenge</a></li>
+              <li><a href="#">#30NitesOfCode</a></li>
+              <li><a href="#">Worlds</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./pricing.html">Pricing</a></li>
+      </ul>
+      <div class="right">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-moon"></i></a>
+        <a href="./signUp.html" class="SignUpButton">Sign up</a>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- Left Panel: Problem -->
+      <div class="problem" id="problem">
+        <h2>Challenge: Reverse a String</h2>
+        <p>
+          Write a function that takes a string as input and returns the string
+          reversed.
+        </p>
+
+        <h3>Example 1</h3>
+        <p>Input: <code>"hello"</code></p>
+        <p>Output: <code>"olleh"</code></p>
+        <img
+          src="https://i.imgur.com/OuQz0N5.png"
+          alt="Example 1 visualization"
+        />
+
+        <h3>Example 2</h3>
+        <p>Input: <code>"OpenAI"</code></p>
+        <p>Output: <code>"IAnepO"</code></p>
+        <img
+          src="https://i.imgur.com/fL8y9r5.png"
+          alt="Example 2 visualization"
+        />
+
+        <h3>Hints</h3>
+        <ul>
+          <li>
+            You can use the <code>split</code>, <code>reverse</code>, and
+            <code>join</code> methods in JavaScript.
+          </li>
+          <li>
+            Remember that strings are immutable in JavaScript, so you need to
+            convert it to an array first.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Vertical Resizer -->
+      <div class="resizer" id="resizer"></div>
+
+
+      <div class="code-area">
+        <div
+          class="section-label"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          Editor
+          <button class="run-button" id="runButton">Run</button>
+        </div>
+
+        <div class="editor" id="editor" contenteditable="true">
+          // Write your code here function reverseString(str) { return
+          str.split("").reverse().join(""); }
+          console.log(reverseString("hello"));
+          console.log(reverseString("OpenAI"));
+        </div>
+
+        <!-- Horizontal Resizer -->
+        <div class="resizer-row" id="resizerRow"></div>
+
+        <div class="section-label">Console</div>
+        <div class="console" id="console">> olleh > IAnepO</div>
+      </div>
+    </div>
+    <script src="js/chalenge.js"></script>
+  </body>
+</html>
