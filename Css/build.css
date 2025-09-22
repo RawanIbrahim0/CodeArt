@@ -6,6 +6,17 @@
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+html {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
+}
+
+button:hover,
+a:hover,
+.SignUpButton:hover,
+[role="button"]:hover,
+input[type="submit"]:hover {
+    cursor: url("./assets/images/download\ \(1\).png") 16 16, grabbing;
+}
 /* Root variables for consistent color scheme and spacing */
 :root {
   /* Color palette based on the pixel art theme */
@@ -32,11 +43,7 @@
 /* Base body styles */
 body {
   font-family: var(--font-body); /* Set default font */
-  background: linear-gradient(
-    135deg,
-    var(--primary-bg) 0%,
-    var(--secondary-bg) 100%
-  ); /* Gradient background */
+   background: linear-gradient(to bottom, #000014, #2e0066);
   color: var(--text-light); /* Default text color */
   min-height: 100vh; /* Minimum height to fill viewport */
   line-height: 1.6; /* Improved readability with proper line height */
@@ -143,6 +150,8 @@ body {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
+  font-size: 0.8rem;
+
 }
 
 .SignUpButton {
@@ -155,11 +164,11 @@ body {
   background-color: #ffbf00;
   border: 2px solid rgb(217, 216, 216);
   border-bottom-width: 5px;
-
   cursor: pointer;
   transition: all 0.1s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: relative;
+  font-family: "Press Start 2P", cursive;
   clip-path: polygon(
     6px 0px,
     6px 2px,
@@ -269,7 +278,7 @@ body {
   min-height: 100vh; /* Fill viewport height */
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack items vertically */
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
 
 /* Header section styles */
@@ -294,7 +303,6 @@ body {
 .new-build-btn {
   background: var(--accent-blue); /* Bright blue background */
   color: var(--text-light); /* White text */
-  border: none; /* Remove default border */
   padding: var(--spacing-sm) var(--spacing-md); /* Add padding */
   border-radius: 8px; /* Rounded corners */
   font-family: var(--font-pixel); /* Use pixel font */
@@ -302,13 +310,58 @@ body {
   cursor: pointer; /* Show pointer cursor on hover */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
   box-shadow: 0 4px 12px rgba(193, 193, 193, 0.3); /* Glowing shadow */
+ border: 2px solid rgb(217, 216, 216);
+  border-bottom-width: 5px;
+  transition: all 0.1s ease;
+  position: relative;
+  clip-path: polygon(
+    6px 0px,
+    6px 2px,
+    4px 2px,
+    4px 4px,
+    2px 4px,
+    2px 6px,
+    0px 6px,
+    0px 8px,
+    0px calc(100% - 6px),
+    2px calc(100% - 6px),
+    2px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(100% - 2px),
+    6px calc(100% - 2px),
+    6px calc(100% + 0px),
+    8px calc(100% + 0px),
+    calc(100% - 6px) calc(100% + 0px),
+    calc(100% - 6px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 2px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 4px),
+    calc(100% - 2px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 6px),
+    calc(100% + 0px) calc(100% - 8px),
+    calc(100% + 0px) 6px,
+    calc(100% - 2px) 6px,
+    calc(100% - 2px) 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 2px,
+    calc(100% - 6px) 2px,
+    calc(100% - 6px) 0px,
+    calc(100% - 8px) 0px
+  );
 }
 
-/* Hover effect for New Build button */
-.new-build-btn:hover {
-  transform: translateY(-2px); /* Lift effect on hover */
-  box-shadow: 0 6px 16px rgba(193, 193, 193, 0.3); /* Enhanced glow on hover */
+.new-build-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
 }
+
+
+/* Hover effect for New Build button */
+/* .new-build-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(193, 193, 193, 0.3); 
+} */
 
 /* Main content area */
 .main-content {
@@ -320,15 +373,49 @@ body {
 
 /* Build card styling */
 .build-card {
-  background: var(--border-color); /* Semi-transparent white background */
+  background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px); /* Blur effect for modern glass look */
-  border-radius: 16px; /* Rounded corners */
   padding: var(--spacing-xl); /* Add padding inside card */
   text-align: center; /* Center align text */
   max-width: 600px; /* Maximum width for card */
   width: 100%; /* Full width up to max-width */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  position: relative;
+ clip-path: polygon(
+    12px 0px,
+    12px 4px,
+    8px 4px,
+    8px 8px,
+    4px 8px,
+    4px 12px,
+    0px 12px,
+    0px 16px,
+    0px calc(100% - 12px),
+    4px calc(100% - 12px),
+    4px calc(100% - 8px),
+    8px calc(100% - 8px),
+    8px calc(100% - 4px),
+    12px calc(100% - 4px),
+    12px calc(100% + 0px),
+    16px calc(100% + 0px),
+    calc(100% - 12px) calc(100% + 0px),
+    calc(100% - 12px) calc(100% - 3px),
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% + 0px) calc(100% - 12px),
+    calc(100% + 0px) calc(100% - 16px),
+    calc(100% + 0px) 12px,
+    calc(100% - 4px) 12px,
+    calc(100% - 4px) 8px,
+    calc(100% - 8px) 8px,
+    calc(100% - 8px) 4px,
+    calc(100% - 12px) 4px,
+    calc(100% - 12px) 0px,
+    calc(100% - 16px) 0px
+  );
 }
 
 /* Container for character sprites */
@@ -374,7 +461,7 @@ body {
 
 /* Tutorial link styling */
 .tutorial-link {
-  color: var(--accent-blue); /* Bright blue color */
+  color: rgb(246, 232, 35); /* Bright blue color */
   text-decoration: underline; /* Underline for link indication */
   font-weight: 500; /* Medium font weight */
   transition: color 0.3s ease; /* Smooth color transition */
@@ -384,14 +471,14 @@ body {
 .create-build-btn {
   background: var(--accent-blue); /* Bright blue background */
   color: var(--text-light); /* White text */
-  border: none; /* Remove default border */
   padding: var(--spacing-md) var(--spacing-xl); /* Add generous padding */
-  border-radius: 12px; /* Rounded corners */
   font-family: var(--font-pixel); /* Use pixel font */
   font-size: 1rem; /* Standard font size */
   cursor: pointer; /* Show pointer cursor */
-  transition: all 0.3s ease; /* Smooth transitions */
   box-shadow: 0 6px 20px rgba(193, 193, 193, 0.3); /* Glowing shadow */
+  border: 2px solid rgb(217, 216, 216);
+  border-bottom-width: 5px;
+  transition: all 0.1s ease;
   position: relative;
   clip-path: polygon(
     6px 0px,
@@ -434,12 +521,12 @@ body {
   border-bottom-width: 2px;
 }
 /* Hover effect for Create Build button */
-.create-build-btn:hover {
-  background: var(--accent-blue); /* Green background on hover */
-  transform: translateY(-3px); /* Lift effect */
-  box-shadow: 0 8px 24px rgba(193, 193, 193, 0.3); /* Green glow on hover */
+/* .create-build-btn:hover {
+  background: var(--accent-blue);
+  transform: translateY(-3px); 
+  box-shadow: 0 8px 24px rgba(193, 193, 193, 0.3);
 }
-
+ */
 /* LOGIN PAGE STYLES */
 
 /* Login page body styling */

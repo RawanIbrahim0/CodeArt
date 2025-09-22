@@ -4,8 +4,9 @@
   box-sizing: border-box;
   /* color: white; */
 }
+
 html {
-    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
 }
 
 button:hover,
@@ -13,7 +14,7 @@ a:hover,
 .SignUpButton:hover,
 [role="button"]:hover,
 input[type="submit"]:hover {
-    cursor: url("./assets/images/download\ \(1\).png") 16 16, grabbing;
+  cursor: url("../assets/images/home/download\ \(1\).png") 16 16, grabbing;
 }
 
 /* 
@@ -88,7 +89,7 @@ html {
   z-index: 1000;
 }
 
-.menu li:hover > .dropdown {
+.menu li:hover>.dropdown {
   display: block;
 }
 
@@ -122,6 +123,7 @@ html {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 .SignUpButton {
@@ -134,45 +136,43 @@ html {
   background-color: #ffbf00;
   border: 2px solid rgb(217, 216, 216);
   border-bottom-width: 5px;
-
+  font-family: "Press Start 2P", cursive;
   cursor: pointer;
   transition: all 0.1s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: relative;
-   clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .SignUpButton:active {
@@ -231,7 +231,7 @@ html {
     background-color: #111;
   }
 
-  .menu li:hover > .dropdown {
+  .menu li:hover>.dropdown {
     display: block;
   }
 
@@ -250,30 +250,33 @@ body {
   /* background-color: #0000ff; */
   font-family: "Roboto", sans-serif;
 }
+
 h1 {
   font-family: "Press Start 2P";
 }
+
 /* ! hero Section  */
 .heroSection {
   position: relative;
   height: 850px;
   overflow: hidden;
 }
+
 .heroSection::before {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
   background: linear-gradient(
-    /* ! this make it slightly darken to display text */ to bottom,
-    rgba(2, 6, 23, 0) 0%,
-    rgba(2, 6, 23, 0) 35%,
-    rgba(2, 6, 23, 0.1) 40%,
-    rgba(2, 6, 23, 0.2) 60%,
-    rgba(2, 6, 23, 0.3) 75%,
-    rgba(2, 6, 23, 0.4) 80%,
-    rgba(0, 3, 13, 0.9) 100%
-  );
+      /* ! this make it slightly darken to display text */
+      to bottom,
+      rgba(2, 6, 23, 0) 0%,
+      rgba(2, 6, 23, 0) 35%,
+      rgba(2, 6, 23, 0.1) 40%,
+      rgba(2, 6, 23, 0.2) 60%,
+      rgba(2, 6, 23, 0.3) 75%,
+      rgba(2, 6, 23, 0.4) 80%,
+      rgba(0, 3, 13, 0.9) 100%);
   z-index: 10;
 }
 
@@ -288,21 +291,25 @@ h1 {
   align-items: center;
   background-position: center top;
 }
+
 .sky {
   background-size: auto 100%;
   background-repeat: repeat-x;
   background-image: url("assets/images/LandingPage_Sky.webp");
 }
+
 .mount {
   background-size: auto 100%;
   background-repeat: repeat-x;
   background-image: url("assets/images/LandingPage_Mountain.webp");
 }
+
 .hill {
   background-size: auto 100%;
   background-repeat: repeat-x;
   background-image: url("assets/images/LandingPage_Hills.webp");
 }
+
 .grass {
   background-size: auto 100%;
   background-repeat: repeat-x;
@@ -337,6 +344,7 @@ make this when big size screens move slightly to the right to be on the hill
   image-rendering: pixelated;
   pointer-events: none;
 }
+
 /*! Floating Action Button  */
 .fab {
   cursor: pointer;
@@ -354,10 +362,12 @@ make this when big size screens move slightly to the right to be on the hill
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 999;
 }
+
 .fab img {
   height: inherit;
   width: inherit;
 }
+
 /* Journy to the programming world  */
 .middle {
   display: flex;
@@ -366,6 +376,7 @@ make this when big size screens move slightly to the right to be on the hill
   align-items: center;
   margin: 10px;
 }
+
 /* hero section image 'Coding Adventure'  */
 .heroImage {
   position: absolute;
@@ -383,6 +394,7 @@ make this when big size screens move slightly to the right to be on the hill
   pointer-events: none;
   image-rendering: pixelated;
 }
+
 /* ! */
 
 .storyWrapper {
@@ -410,6 +422,7 @@ make this when big size screens move slightly to the right to be on the hill
   color: #fff;
   white-space: nowrap;
 }
+
 .storyItem2 {
   flex-shrink: 0;
   margin: 0 3rem;
@@ -426,25 +439,32 @@ make this when big size screens move slightly to the right to be on the hill
   color: white;
   text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
 }
+
 /*! rainbow Letters */
 .rainbowWord span:nth-child(1) {
   color: #ff0000;
 }
+
 .rainbowWord span:nth-child(2) {
   color: #ff7f00;
 }
+
 .rainbowWord span:nth-child(3) {
   color: #ffff00;
 }
+
 .rainbowWord span:nth-child(4) {
   color: #00ff00;
 }
+
 .rainbowWord span:nth-child(5) {
   color: #0000ff;
 }
+
 .rainbowWord span:nth-child(6) {
   color: #8b00ff;
 }
+
 /* ! our courses Grid  */
 .grid {
   display: grid;
@@ -463,40 +483,38 @@ make this when big size screens move slightly to the right to be on the hill
   position: relative;
   border: 2px solid #79879b;
   transition: transform 0.2s;
-  clip-path: polygon(
-    12px 0px,
-    12px 4px,
-    8px 4px,
-    8px 8px,
-    4px 8px,
-    4px 12px,
-    0px 12px,
-    0px 16px,
-    0px calc(100% - 12px),
-    4px calc(100% - 12px),
-    4px calc(100% - 8px),
-    8px calc(100% - 8px),
-    8px calc(100% - 4px),
-    12px calc(100% - 4px),
-    12px calc(100% + 0px),
-    16px calc(100% + 0px),
-    calc(100% - 12px) calc(100% + 0px),
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 8px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 16px),
-    calc(100% + 0px) 12px,
-    calc(100% - 4px) 12px,
-    calc(100% - 4px) 8px,
-    calc(100% - 8px) 8px,
-    calc(100% - 8px) 4px,
-    calc(100% - 12px) 4px,
-    calc(100% - 12px) 0px,
-    calc(100% - 16px) 0px
-  );
+  clip-path: polygon(12px 0px,
+      12px 4px,
+      8px 4px,
+      8px 8px,
+      4px 8px,
+      4px 12px,
+      0px 12px,
+      0px 16px,
+      0px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% + 0px),
+      16px calc(100% + 0px),
+      calc(100% - 12px) calc(100% + 0px),
+      calc(100% - 12px) calc(100% - 3px),
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 16px),
+      calc(100% + 0px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 0px,
+      calc(100% - 16px) 0px);
 }
 
 .card:hover {
@@ -563,10 +581,8 @@ make this when big size screens move slightly to the right to be on the hill
 .Community {
   display: flex;
   justify-content: center;
-  gap: 4rem;
   align-items: center;
   flex-direction: row;
-  padding: 5rem;
   padding-top: 10rem;
 }
 
@@ -577,13 +593,8 @@ make this when big size screens move slightly to the right to be on the hill
   display: flex;
   align-items: flex-start;
   position: relative;
-
-  width: 80%;
-  height: 70%;
-}
-
-.two {
-  margin-right: 2.7rem;
+  width: 40%;
+  height: 30%;
 }
 
 .image-container .main-image {
@@ -629,8 +640,6 @@ make this when big size screens move slightly to the right to be on the hill
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%;
-  width: 70%;
 }
 
 /* two feild */
@@ -717,28 +726,30 @@ make this when big size screens move slightly to the right to be on the hill
 
 .image-container .conversation {
   position: relative;
-  width: 80%;
+  width: 50rem;
+  height: 50rem;
   height: auto;
 }
 
 .conversation-container .character-table {
   position: absolute;
-  width: 15rem;
-  height: 8rem;
+  width: 17rem;
+  height: 10rem;
   bottom: -2rem;
   right: 5rem;
 }
 
 /*   Card Our Story */
 .Our_Story {
-  padding: 150px;
-  background: linear-gradient(rgb(2, 6, 23) 40%, rgba(2, 6, 23, 0) 150%);
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
-  /* background-color: grey; */
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
+  padding: 160px 1rem;
+  background: linear-gradient(rgb(2, 6, 23) 40%, rgba(2, 6, 23, 0) 150%),
+    url(../assets/images/town\ sq.png) 50% 750px / cover no-repeat lightgray;
+
 }
 
 .Our_Story .title {
@@ -755,14 +766,16 @@ make this when big size screens move slightly to the right to be on the hill
 }
 
 .image-person img {
-  width: 18rem;
-  height: 12rem;
+  width: 15rem;
+  height: 18rem;
+  margin-bottom: 7rem;
 }
 
 .CardOurStory {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   gap: 10rem;
 }
 
@@ -783,40 +796,38 @@ make this when big size screens move slightly to the right to be on the hill
 .nameCard {
   border: 2px solid rgb(185, 162, 227);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .person_name p {
@@ -849,40 +860,38 @@ make this when big size screens move slightly to the right to be on the hill
 .infoCard {
   border: 2px solid rgb(185, 162, 227);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .CardOurStory .OneCard_person .inner-container .info {
@@ -909,79 +918,75 @@ make this when big size screens move slightly to the right to be on the hill
 .nameCard2 {
   border: 2px solid rgb(157, 196, 85);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .infoCard2 {
   border: 2px solid rgb(157, 196, 85);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 /*   numbers */
@@ -1028,9 +1033,11 @@ make this when big size screens move slightly to the right to be on the hill
 .CountNumbers .counter .countries {
   color: rgb(132, 204, 22);
 }
+
 .CountNumbers .counter .exercises {
   color: rgb(139, 92, 246);
 }
+
 .CountNumbers .counter .projects {
   color: rgb(236, 72, 153);
 }
@@ -1063,15 +1070,18 @@ make this when big size screens move slightly to the right to be on the hill
 }
 
 @keyframes blink {
+
   0%,
   50% {
     opacity: 1;
   }
+
   51%,
   100% {
     opacity: 0;
   }
 }
+
 /* !  */
 .counterD {
   font-weight: bold;
@@ -1101,7 +1111,7 @@ make this when big size screens move slightly to the right to be on the hill
 .footer-col h4 {
   font-size: 1.2em;
   margin-bottom: 15px;
-color:grey;
+  color: grey;
 }
 
 .footer-col ul {
@@ -1130,7 +1140,7 @@ color:grey;
   padding-top: 20px;
 
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
@@ -1160,18 +1170,35 @@ color:grey;
 
 /* السوشال ميديا */
 .social a {
- font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 1.4em;
   transition: opacity 0.3s ease;
-  color: inherit; 
+  color: inherit;
 }
 
-.social a.instagram { color: #E1306C; }
-.social a.twitter { color: #1DA1F2; }
-.social a.github { color: #333; }
-.social a.youtube { color: #FF0000; }
-.social a.linkedin { color: #0077B5; }
-.social a.spotify { color: #1DB954; }
+.social a.instagram {
+  color: #E1306C;
+}
+
+.social a.twitter {
+  color: #1DA1F2;
+}
+
+.social a.github {
+  color: #333;
+}
+
+.social a.youtube {
+  color: #FF0000;
+}
+
+.social a.linkedin {
+  color: #0077B5;
+}
+
+.social a.spotify {
+  color: #1DB954;
+}
 
 .social a:hover {
   opacity: 0.8;
@@ -1203,7 +1230,242 @@ color:grey;
 /* Sign Up */
 
 .MainSignUp {
-    background-image: url("./assets/images/giphy\ \(1\).gif");
+  background-image: url("./assets/images/giphy\ \(1\).gif");
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* طبقة فوق الخلفية */
+.MainSignUp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 22, 76, 0.7);
+  z-index: 1;
+}
+
+.MainSignUp>* {
+  position: relative;
+  z-index: 2;
+}
+
+.CardSignUp h2 {
+  font-family: "Press Start 2P", system-ui;
+  color: rgb(29, 59, 134);
+
+}
+
+.CardSignUp {
+  border: 2px solid rgb(29, 59, 134);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 8px beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 30%;
+  height: 50%;
+  clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
+  padding-top: 5rem;
+}
+
+#fEmail,
+#fPassword {
+  background-color: rgb(201, 202, 202);
+  width: 23rem;
+  height: 2.3rem;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid rgb(109, 109, 109);
+  clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 23rem;
+  margin: 0 auto;
+}
+
+/* زر العين */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(109, 109, 109);
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-password:hover {
+  color: rgb(29, 59, 134);
+}
+
+#fEmail:focus,
+#fPassword:focus {
+  border-color: rgb(29, 59, 134);
+  box-shadow: 0 0 4px rgba(29, 59, 134, 0.3);
+  background-color: rgb(220, 220, 220);
+}
+
+.SignUpButtonBlue {
+  width: 20rem;
+  height: 2.7rem;
+  color: white;
+  font-size: 0.7rem;
+  font-family: "Press Start 2P", system-ui;
+  background-color: rgb(29, 59, 134);
+  border: 2px solid rgb(3, 22, 69);
+  border-bottom-width: 5px;
+  clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.SignUpButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+.GoogleButton {
+  width: 10rem;
+  height: 2.5rem;
+  color: rgb(3, 22, 69);
+  font-size: 0.7rem;
+  font-family: "Press Start 2P", system-ui;
+  background-color: rgb(218, 218, 218);
+  border: 2px solid rgb(149, 149, 149);
+  border-bottom-width: 4px;
+  clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.GoogleButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+
+/* Computer image container */
+.computer-container {
+  margin-top: auto;
+  align-self: flex-start;
+  padding-left: 15px;
+  padding-bottom: 40px;
+}
+
+/* Computer image styling */
+.computer-image {
+  width: 120px;
+  height: auto;
+  animation: pulse 2s ease-in-out infinite;
+  filter: drop-shadow(0 4px 12px rgba(0, 212, 255, 0.5));
+}
+
+
+/* Section Ready To Learn */
+.Ready{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.Ready .ready {
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(2, 6, 23) 0px 4px 0px;
+  font-family: PixelGridM;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.44px;
+}
+
+.Ready .ready .Ready_to_typewriter {
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(2, 6, 23) 0px 4px 0px;
+  font-family: PixelGridM;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.44px;
+}
+
+.textH1 {
+  display: inline-block;
+}
+
+.span_ready {
+  color: rgb(255, 255, 255);
+}
+
+.ReadyButton {
+  width: 20rem;
+  height: 3.3rem;
+  color: white;
+  font-size:0.8rem;
+  font-family: "Press Start 2P", system-ui;
+  background-color: rgb(66, 115, 238);
+  border: 2.5px solid rgb(3, 22, 69);
+  border-bottom-width: 7px;
+  clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.ReadyButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2.5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.ready_to_learn{
+  background-image: url("../assets/images/town\ sq.png");
     image-rendering: pixelated;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1215,9 +1477,9 @@ color:grey;
     position: relative;
     overflow: hidden;
 }
-
 /* طبقة فوق الخلفية */
-.MainSignUp::before {
+/*
+.ready_to_learn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1228,139 +1490,7 @@ color:grey;
     z-index: 1;
 }
 
-.MainSignUp>* {
+.ready_to_learn>* {
     position: relative;
     z-index: 2;
-}
-
-.CardSignUp h2 {
-    font-family: "Press Start 2P", system-ui;
-    color: rgb(29, 59, 134);
-
-}
-
-.CardSignUp {
-    border: 2px solid rgb(29, 59, 134);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 8px beige;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    width: 30%;
-    height: 50%;
-    clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
-    padding-top: 5rem;
-}
-
-#fEmail,
-#fPassword {
-    background-color: rgb(201, 202, 202);
-    width: 23rem;
-    height: 2.3rem;
-    padding: 0.2rem 0.5rem;
-    border: 2px solid rgb(109, 109, 109);
-    clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.password-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 23rem;
-    margin: 0 auto;
-}
-
-/* زر العين */
-.toggle-password {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    color: rgb(109, 109, 109);
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.toggle-password:hover {
-    color: rgb(29, 59, 134);
-}
-
-#fEmail:focus,
-#fPassword:focus {
-    border-color: rgb(29, 59, 134);
-    box-shadow: 0 0 4px rgba(29, 59, 134, 0.3);
-    background-color: rgb(220, 220, 220);
-}
-
-.SignUpButtonBlue {
-    width: 20rem;
-    height: 2.7rem;
-    color: white;
-    font-size: 0.7rem;
-    font-family: "Press Start 2P", system-ui;
-    background-color: rgb(29, 59, 134);
-    border: 2px solid rgb(3, 22, 69);
-    border-bottom-width: 5px;
-    clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
-    cursor: pointer;
-    transition: all 0.1s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.SignUpButton:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-    border-bottom-width: 2px;
-}
-
-.GoogleButton {
-    width: 10rem;
-    height: 2.5rem;
-    color: rgb(3, 22, 69);
-    font-size: 0.7rem;
-    font-family: "Press Start 2P", system-ui;
-    background-color: rgb(218, 218, 218);
-    border: 2px solid rgb(149, 149, 149);
-    border-bottom-width: 4px;
-    clip-path: polygon(6px 0px, 6px 2px, 4px 2px, 4px 4px, 2px 4px, 2px 6px, 0px 6px, 0px 8px, 0px calc(100% - 6px), 2px calc(100% - 6px), 2px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 2px), 6px calc(100% - 2px), 6px calc(100% + 0px), 8px calc(100% + 0px), calc(100% - 6px) calc(100% + 0px), calc(100% - 6px) calc(100% - 2px), calc(100% - 4px) calc(100% - 2px), calc(100% - 4px) calc(100% - 4px), calc(100% - 2px) calc(100% - 4px), calc(100% - 2px) calc(100% - 6px), calc(100% + 0px) calc(100% - 6px), calc(100% + 0px) calc(100% - 8px), calc(100% + 0px) 6px, calc(100% - 2px) 6px, calc(100% - 2px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 2px, calc(100% - 6px) 2px, calc(100% - 6px) 0px, calc(100% - 8px) 0px);
-    cursor: pointer;
-    transition: all 0.1s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.GoogleButton:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-    border-bottom-width: 2px;
-}
-
-
-/* Computer image container */
-.computer-container {
-    margin-top: auto;
-    align-self: flex-start;
-    padding-left: 15px;
-    padding-bottom: 40px;
-}
-
-/* Computer image styling */
-.computer-image {
-    width: 120px;
-    height: auto;
-    animation: pulse 2s ease-in-out infinite;
-    filter: drop-shadow(0 4px 12px rgba(0, 212, 255, 0.5));
-}
-
+} */

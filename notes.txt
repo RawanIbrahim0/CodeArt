@@ -5,4 +5,6 @@ the background #020617
 the secendory background #0f1524
 the grey #475569
 
+  font-family: "Press Start 2P", cursive;
+
 
