@@ -30,7 +30,7 @@ function horizontalScroll(containerSelector, contentSelector) {
       end: () => "+=" + scrollAmount,
       pin: true,
       scrub: 1,
-      markers: false, // ← remove markers
+      markers: false, 
       invalidateOnRefresh: true,
     },
   });

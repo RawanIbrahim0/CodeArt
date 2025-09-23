@@ -86,7 +86,7 @@ input[type="submit"]:hover {
   z-index: 1000;
 }
 
-.menu li:hover > .dropdown {
+.menu li:hover>.dropdown {
   display: block;
 }
 
@@ -138,40 +138,38 @@ input[type="submit"]:hover {
   transition: all 0.1s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .SignUpButton:active {
@@ -230,7 +228,7 @@ input[type="submit"]:hover {
     background-color: #111;
   }
 
-  .menu li:hover > .dropdown {
+  .menu li:hover>.dropdown {
     display: block;
   }
 
@@ -267,15 +265,15 @@ h1 {
   inset: 0;
   pointer-events: none;
   background: linear-gradient(
-    /* ! this make it slightly darken to display text */ to bottom,
-    rgba(2, 6, 23, 0) 0%,
-    rgba(2, 6, 23, 0) 35%,
-    rgba(2, 6, 23, 0.1) 40%,
-    rgba(2, 6, 23, 0.2) 60%,
-    rgba(2, 6, 23, 0.3) 75%,
-    rgba(2, 6, 23, 0.4) 80%,
-    rgba(0, 3, 13, 0.9) 100%
-  );
+      /* ! this make it slightly darken to display text */
+      to bottom,
+      rgba(2, 6, 23, 0) 0%,
+      rgba(2, 6, 23, 0) 35%,
+      rgba(2, 6, 23, 0.1) 40%,
+      rgba(2, 6, 23, 0.2) 60%,
+      rgba(2, 6, 23, 0.3) 75%,
+      rgba(2, 6, 23, 0.4) 80%,
+      rgba(0, 3, 13, 0.9) 100%);
   z-index: 10;
 }
 
@@ -484,40 +482,38 @@ make this when big size screens move slightly to the right to be on the hill
   position: relative;
   border: 2px solid #79879b;
   transition: transform 0.2s;
-  clip-path: polygon(
-    12px 0px,
-    12px 4px,
-    8px 4px,
-    8px 8px,
-    4px 8px,
-    4px 12px,
-    0px 12px,
-    0px 16px,
-    0px calc(100% - 12px),
-    4px calc(100% - 12px),
-    4px calc(100% - 8px),
-    8px calc(100% - 8px),
-    8px calc(100% - 4px),
-    12px calc(100% - 4px),
-    12px calc(100% + 0px),
-    16px calc(100% + 0px),
-    calc(100% - 12px) calc(100% + 0px),
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 8px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 16px),
-    calc(100% + 0px) 12px,
-    calc(100% - 4px) 12px,
-    calc(100% - 4px) 8px,
-    calc(100% - 8px) 8px,
-    calc(100% - 8px) 4px,
-    calc(100% - 12px) 4px,
-    calc(100% - 12px) 0px,
-    calc(100% - 16px) 0px
-  );
+  clip-path: polygon(12px 0px,
+      12px 4px,
+      8px 4px,
+      8px 8px,
+      4px 8px,
+      4px 12px,
+      0px 12px,
+      0px 16px,
+      0px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% + 0px),
+      16px calc(100% + 0px),
+      calc(100% - 12px) calc(100% + 0px),
+      calc(100% - 12px) calc(100% - 3px),
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 16px),
+      calc(100% + 0px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 0px,
+      calc(100% - 16px) 0px);
 }
 
 .card:hover {
@@ -798,40 +794,38 @@ make this when big size screens move slightly to the right to be on the hill
 .nameCard {
   border: 2px solid rgb(185, 162, 227);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .person_name p {
@@ -864,40 +858,38 @@ make this when big size screens move slightly to the right to be on the hill
 .infoCard {
   border: 2px solid rgb(185, 162, 227);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .CardOurStory .OneCard_person .inner-container .info {
@@ -924,79 +916,75 @@ make this when big size screens move slightly to the right to be on the hill
 .nameCard2 {
   border: 2px solid rgb(157, 196, 85);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .infoCard2 {
   border: 2px solid rgb(157, 196, 85);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 /*   numbers */
@@ -1080,6 +1068,7 @@ make this when big size screens move slightly to the right to be on the hill
 }
 
 @keyframes blink {
+
   0%,
   50% {
     opacity: 1;
@@ -1124,7 +1113,7 @@ make this when big size screens move slightly to the right to be on the hill
   z-index: 1;
 }
 
-.MainSignUp > * {
+.MainSignUp>* {
   position: relative;
   z-index: 2;
 }
@@ -1142,44 +1131,43 @@ make this when big size screens move slightly to the right to be on the hill
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   width: 30%;
-  height: 50%;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
-  padding-top: 5rem;
+  height: 85%;
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
+      padding-top: 6rem;
+      margin-top: 6rem;
 }
 
 #fEmail,
@@ -1189,40 +1177,38 @@ make this when big size screens move slightly to the right to be on the hill
   height: 2.3rem;
   padding: 0.2rem 0.5rem;
   border: 2px solid rgb(109, 109, 109);
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
   outline: none;
   transition: all 0.3s ease;
 }
@@ -1273,40 +1259,38 @@ make this when big size screens move slightly to the right to be on the hill
   background-color: rgb(29, 59, 134);
   border: 2px solid rgb(3, 22, 69);
   border-bottom-width: 5px;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
   cursor: pointer;
   transition: all 0.1s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -1328,40 +1312,38 @@ make this when big size screens move slightly to the right to be on the hill
   background-color: rgb(218, 218, 218);
   border: 2px solid rgb(149, 149, 149);
   border-bottom-width: 4px;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
   cursor: pointer;
   transition: all 0.1s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -1379,7 +1361,7 @@ make this when big size screens move slightly to the right to be on the hill
   margin-top: auto;
   align-self: flex-start;
   padding-left: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 65px;
 }
 
 /* Computer image styling */
@@ -1398,6 +1380,7 @@ make this when big size screens move slightly to the right to be on the hill
   align-items: center;
   gap: 3rem;
 }
+
 .Ready .ready {
   margin: 0px;
   color: rgb(255, 255, 255);
@@ -1439,40 +1422,38 @@ make this when big size screens move slightly to the right to be on the hill
   background-color: rgb(66, 115, 238);
   border: 2.5px solid rgb(3, 22, 69);
   border-bottom-width: 7px;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
   cursor: pointer;
   transition: all 0.1s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -1508,7 +1489,7 @@ make this when big size screens move slightly to the right to be on the hill
 }
 
 .footer-col h4 {
-    font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 1.2em;
   margin-bottom: 15px;
   color: rgb(223, 169, 5);
@@ -1540,8 +1521,8 @@ make this when big size screens move slightly to the right to be on the hill
   padding-top: 20px;
 
   display: flex;
-  justify-content: space-between; 
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   flex-wrap: wrap;
   gap: 20px;
   font-size: 0.9em;
@@ -1549,12 +1530,13 @@ make this when big size screens move slightly to the right to be on the hill
 
 .footer-left {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 20px;
 }
 
 .footer-links {
   display: flex;
+  justify-content: end;
   gap: 15px;
 }
 
@@ -1570,18 +1552,36 @@ make this when big size screens move slightly to the right to be on the hill
 
 /* السوشال ميديا */
 .social a {
- font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 1.4em;
   transition: opacity 0.3s ease;
-  color: inherit; 
+  color: inherit;
+
 }
 
-.social a.instagram { color: #E1306C; }
-.social a.twitter { color: #1DA1F2; }
-.social a.github { color: #333; }
-.social a.youtube { color: #FF0000; }
-.social a.linkedin { color: #0077B5; }
-.social a.spotify { color: #1DB954; }
+.social a.instagram {
+  color: #E1306C;
+}
+
+.social a.twitter {
+  color: #1DA1F2;
+}
+
+.social a.github {
+  color: #333;
+}
+
+.social a.youtube {
+  color: #FF0000;
+}
+
+.social a.linkedin {
+  color: #0077B5;
+}
+
+.social a.spotify {
+  color: #1DB954;
+}
 
 .social a:hover {
   opacity: 0.8;

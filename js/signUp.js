@@ -45,7 +45,8 @@ function switchToLogin() {
   document.getElementById("need_account_text").innerText = "You need account?";
   document.getElementById("forgot-password").style.display = "block";
   document.getElementById("password-wrapper").style.display = "flex";
-CardSignUp.style.height="60%";
+CardSignUp.style.height="85%";
+
 
 }
 
@@ -57,7 +58,6 @@ function switchToSignup() {
   document.getElementById("need_account_text").innerText = "Already have an account?";
   document.getElementById("forgot-password").style.display = "none";
   document.getElementById("password-wrapper").style.display = "flex";
-  CardSignUp.style.height="50%";
 
 }
 
@@ -67,7 +67,7 @@ function switchToForgot() {
   document.getElementById("form-button").innerText = "Reset Password";
   document.getElementById("need_account_text").innerText = "";
   document.getElementById("toggle-linkLogin").innerText = "";
-  CardSignUp.style.height="45%";
+  CardSignUp.style.height="70%";
 
 
   // إيميل يضل ظاهر

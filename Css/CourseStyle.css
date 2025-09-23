@@ -31,6 +31,7 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+
 h1 {
   font-family: "Press Start 2P";
 }
@@ -40,6 +41,7 @@ h1 {
   height: 447px;
   overflow: hidden;
 }
+
 .CouserSection::before {
   content: "";
   position: absolute;
@@ -59,11 +61,13 @@ h1 {
   align-items: center;
   background-position: center top;
 }
+
 .CourseImage1 {
   background-size: auto 100%;
   background-repeat: repeat-x;
   background-image: url("../assets/html-banner-background.png");
 }
+
 .CourseImage2 {
   background-position: center left;
   background-size: auto 100%;
@@ -77,12 +81,14 @@ h1 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .CourseHeroText p {
   color: #fff;
   font-size: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .CourseHeroText {
   position: absolute;
   top: 50%;
@@ -94,6 +100,7 @@ h1 {
   font-size: clamp(1.2rem, 2vw, 2rem);
   text-align: start;
 }
+
 /* ! Stepper */
 .accordion {
   width: 50%;
@@ -103,40 +110,38 @@ h1 {
   box-shadow: 0 8px 25px rgba(56, 189, 248, 0.28);
   padding: 24px;
   transition: all 0.3s ease-in-out;
-  clip-path: polygon(
-    12px 0px,
-    12px 4px,
-    8px 4px,
-    8px 8px,
-    4px 8px,
-    4px 12px,
-    0px 12px,
-    0px 16px,
-    0px calc(100% - 12px),
-    4px calc(100% - 12px),
-    4px calc(100% - 8px),
-    8px calc(100% - 8px),
-    8px calc(100% - 4px),
-    12px calc(100% - 4px),
-    12px calc(100% + 0px),
-    16px calc(100% + 0px),
-    calc(100% - 12px) calc(100% + 0px),
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 8px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 16px),
-    calc(100% + 0px) 12px,
-    calc(100% - 4px) 12px,
-    calc(100% - 4px) 8px,
-    calc(100% - 8px) 8px,
-    calc(100% - 8px) 4px,
-    calc(100% - 12px) 4px,
-    calc(100% - 12px) 0px,
-    calc(100% - 16px) 0px
-  );
+  clip-path: polygon(12px 0px,
+      12px 4px,
+      8px 4px,
+      8px 8px,
+      4px 8px,
+      4px 12px,
+      0px 12px,
+      0px 16px,
+      0px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% + 0px),
+      16px calc(100% + 0px),
+      calc(100% - 12px) calc(100% + 0px),
+      calc(100% - 12px) calc(100% - 3px),
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 16px),
+      calc(100% + 0px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 0px,
+      calc(100% - 16px) 0px);
 }
 
 .accordion-item {
@@ -146,80 +151,76 @@ h1 {
   border: 2px solid #334155;
   background: #111827;
   transition: all 0.3s ease-in-out;
-  clip-path: polygon(
-    12px 0px,
-    12px 4px,
-    8px 4px,
-    8px 8px,
-    4px 8px,
-    4px 12px,
-    0px 12px,
-    0px 16px,
-    0px calc(100% - 12px),
-    4px calc(100% - 12px),
-    4px calc(100% - 8px),
-    8px calc(100% - 8px),
-    8px calc(100% - 4px),
-    12px calc(100% - 4px),
-    12px calc(100% + 0px),
-    16px calc(100% + 0px),
-    calc(100% - 12px) calc(100% + 0px),
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 8px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 16px),
-    calc(100% + 0px) 12px,
-    calc(100% - 4px) 12px,
-    calc(100% - 4px) 8px,
-    calc(100% - 8px) 8px,
-    calc(100% - 8px) 4px,
-    calc(100% - 12px) 4px,
-    calc(100% - 12px) 0px,
-    calc(100% - 16px) 0px
-  );
+  clip-path: polygon(12px 0px,
+      12px 4px,
+      8px 4px,
+      8px 8px,
+      4px 8px,
+      4px 12px,
+      0px 12px,
+      0px 16px,
+      0px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% + 0px),
+      16px calc(100% + 0px),
+      calc(100% - 12px) calc(100% + 0px),
+      calc(100% - 12px) calc(100% - 3px),
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 16px),
+      calc(100% + 0px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 0px,
+      calc(100% - 16px) 0px);
 }
 
 .accordion-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(56, 189, 248, 0.28);
   border-color: #38bdf8;
-  clip-path: polygon(
-    12px 0px,
-    12px 4px,
-    8px 4px,
-    8px 8px,
-    4px 8px,
-    4px 12px,
-    0px 12px,
-    0px 16px,
-    0px calc(100% - 12px),
-    4px calc(100% - 12px),
-    4px calc(100% - 8px),
-    8px calc(100% - 8px),
-    8px calc(100% - 4px),
-    12px calc(100% - 4px),
-    12px calc(100% + 0px),
-    16px calc(100% + 0px),
-    calc(100% - 12px) calc(100% + 0px),
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 8px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 16px),
-    calc(100% + 0px) 12px,
-    calc(100% - 4px) 12px,
-    calc(100% - 4px) 8px,
-    calc(100% - 8px) 8px,
-    calc(100% - 8px) 4px,
-    calc(100% - 12px) 4px,
-    calc(100% - 12px) 0px,
-    calc(100% - 16px) 0px
-  );
+  clip-path: polygon(12px 0px,
+      12px 4px,
+      8px 4px,
+      8px 8px,
+      4px 8px,
+      4px 12px,
+      0px 12px,
+      0px 16px,
+      0px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% + 0px),
+      16px calc(100% + 0px),
+      calc(100% - 12px) calc(100% + 0px),
+      calc(100% - 12px) calc(100% - 3px),
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 16px),
+      calc(100% + 0px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 0px,
+      calc(100% - 16px) 0px);
 }
 
 .accordion-header {
@@ -233,40 +234,38 @@ h1 {
 
 .accordion-header:hover {
   background: rgba(56, 189, 248, 0.08);
-  clip-path: polygon(
-    12px 0px,
-    12px 4px,
-    8px 4px,
-    8px 8px,
-    4px 8px,
-    4px 12px,
-    0px 12px,
-    0px 16px,
-    0px calc(100% - 12px),
-    4px calc(100% - 12px),
-    4px calc(100% - 8px),
-    8px calc(100% - 8px),
-    8px calc(100% - 4px),
-    12px calc(100% - 4px),
-    12px calc(100% + 0px),
-    16px calc(100% + 0px),
-    calc(100% - 12px) calc(100% + 0px),
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 8px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 16px),
-    calc(100% + 0px) 12px,
-    calc(100% - 4px) 12px,
-    calc(100% - 4px) 8px,
-    calc(100% - 8px) 8px,
-    calc(100% - 8px) 4px,
-    calc(100% - 12px) 4px,
-    calc(100% - 12px) 0px,
-    calc(100% - 16px) 0px
-  );
+  clip-path: polygon(12px 0px,
+      12px 4px,
+      8px 4px,
+      8px 8px,
+      4px 8px,
+      4px 12px,
+      0px 12px,
+      0px 16px,
+      0px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% + 0px),
+      16px calc(100% + 0px),
+      calc(100% - 12px) calc(100% + 0px),
+      calc(100% - 12px) calc(100% - 3px),
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 16px),
+      calc(100% + 0px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 0px,
+      calc(100% - 16px) 0px);
 }
 
 .accordion-header span {
@@ -279,40 +278,38 @@ h1 {
 .number {
   background: linear-gradient(145deg, #0f172a, #1e293b);
   border: 2px solid #38bdf8;
-  clip-path: polygon(
-    12px 0px,
-    12px 4px,
-    8px 4px,
-    8px 8px,
-    4px 8px,
-    4px 12px,
-    0px 12px,
-    0px 16px,
-    0px calc(100% - 12px),
-    4px calc(100% - 12px),
-    4px calc(100% - 8px),
-    8px calc(100% - 8px),
-    8px calc(100% - 4px),
-    12px calc(100% - 4px),
-    12px calc(100% + 0px),
-    16px calc(100% + 0px),
-    calc(100% - 12px) calc(100% + 0px),
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 8px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 16px),
-    calc(100% + 0px) 12px,
-    calc(100% - 4px) 12px,
-    calc(100% - 4px) 8px,
-    calc(100% - 8px) 8px,
-    calc(100% - 8px) 4px,
-    calc(100% - 12px) 4px,
-    calc(100% - 12px) 0px,
-    calc(100% - 16px) 0px
-  );
+  clip-path: polygon(12px 0px,
+      12px 4px,
+      8px 4px,
+      8px 8px,
+      4px 8px,
+      4px 12px,
+      0px 12px,
+      0px 16px,
+      0px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% + 0px),
+      16px calc(100% + 0px),
+      calc(100% - 12px) calc(100% + 0px),
+      calc(100% - 12px) calc(100% - 3px),
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 16px),
+      calc(100% + 0px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 0px,
+      calc(100% - 16px) 0px);
   width: 38px;
   height: 38px;
   display: flex;
@@ -321,7 +318,7 @@ h1 {
   font-size: 15px;
   color: #38bdf8;
   font-weight: bold;
-    font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive;
 
   box-shadow: 0 2px 8px rgba(56, 189, 248, 0.45) inset;
   transition: all 0.3s ease-in-out;
@@ -363,6 +360,7 @@ h1 {
   line-height: 1.6;
   text-align: center;
 }
+
 .exercise {
   display: flex;
   justify-content: space-between;
@@ -374,6 +372,7 @@ h1 {
   transition: all 0.25s ease-in-out;
   padding: 12px 16px;
 }
+
 .exercise:hover {
   background: #1e293b;
   border-color: #38bdf8;
@@ -395,6 +394,38 @@ h1 {
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .start-btn:hover {
@@ -402,6 +433,38 @@ h1 {
   color: #fff;
   box-shadow: 0 0 16px rgba(244, 114, 182, 0.65);
   transform: scale(1.08);
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .locked-btn {
@@ -412,53 +475,52 @@ h1 {
   cursor: not-allowed;
   opacity: 0.7;
 }
+
 /*! Progress*/
 .progress-card {
-  width: 150%;
+  width: 100%;
   background: linear-gradient(145deg, #0f172a, #1e293b);
   border: 3px solid #38bdf8;
   box-shadow: 0 8px 25px rgba(56, 189, 248, 0.28);
   padding: 22px;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  clip-path: polygon(
-    12px 0px,
-    12px 4px,
-    8px 4px,
-    8px 8px,
-    4px 8px,
-    4px 12px,
-    0px 12px,
-    0px 16px,
-    0px calc(100% - 12px),
-    4px calc(100% - 12px),
-    4px calc(100% - 8px),
-    8px calc(100% - 8px),
-    8px calc(100% - 4px),
-    12px calc(100% - 4px),
-    12px calc(100% + 0px),
-    16px calc(100% + 0px),
-    calc(100% - 12px) calc(100% + 0px),
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 8px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 8px),
-    calc(100% - 4px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 12px),
-    calc(100% + 0px) calc(100% - 16px),
-    calc(100% + 0px) 12px,
-    calc(100% - 4px) 12px,
-    calc(100% - 4px) 8px,
-    calc(100% - 8px) 8px,
-    calc(100% - 8px) 4px,
-    calc(100% - 12px) 4px,
-    calc(100% - 12px) 0px,
-    calc(100% - 16px) 0px
-  );
+  clip-path: polygon(12px 0px,
+      12px 4px,
+      8px 4px,
+      8px 8px,
+      4px 8px,
+      4px 12px,
+      0px 12px,
+      0px 16px,
+      0px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% + 0px),
+      16px calc(100% + 0px),
+      calc(100% - 12px) calc(100% + 0px),
+      calc(100% - 12px) calc(100% - 3px),
+      calc(100% - 8px) calc(100% - 4px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 8px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 12px),
+      calc(100% + 0px) calc(100% - 16px),
+      calc(100% + 0px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 0px,
+      calc(100% - 16px) 0px);
 }
 
 .progress-card h2 {
-    font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive;
 
   font-size: 22px;
   color: #38bdf8;
@@ -503,6 +565,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .CourseColumn {
   flex-direction: column;
   display: flex;
@@ -522,16 +585,14 @@ h1 {
   justify-content: center;
   gap: 2rem;
   padding: 100px 20px;
-  background: linear-gradient(
-    90deg,
-    #0658d4,
-    #0f56b4,
-    #0f12b4,
-    #282a91,
-    #5d199c,
-    #9a2da7,
-    #e500fa
-  );
+  background: linear-gradient(90deg,
+      #0658d4,
+      #0f56b4,
+      #0f12b4,
+      #282a91,
+      #5d199c,
+      #9a2da7,
+      #e500fa);
   margin-top: 100px;
 }
 
@@ -571,40 +632,38 @@ h1 {
   transition: all 0.1s ease;
   box-shadow: 0 4px 6px rgba(189, 183, 19, 0.15);
   position: relative;
-  clip-path: polygon(
-    6px 0px,
-    6px 2px,
-    4px 2px,
-    4px 4px,
-    2px 4px,
-    2px 6px,
-    0px 6px,
-    0px 8px,
-    0px calc(100% - 6px),
-    2px calc(100% - 6px),
-    2px calc(100% - 4px),
-    4px calc(100% - 4px),
-    4px calc(100% - 2px),
-    6px calc(100% - 2px),
-    6px calc(100% + 0px),
-    8px calc(100% + 0px),
-    calc(100% - 6px) calc(100% + 0px),
-    calc(100% - 6px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 2px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 4px),
-    calc(100% - 2px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 6px),
-    calc(100% + 0px) calc(100% - 8px),
-    calc(100% + 0px) 6px,
-    calc(100% - 2px) 6px,
-    calc(100% - 2px) 4px,
-    calc(100% - 4px) 4px,
-    calc(100% - 4px) 2px,
-    calc(100% - 6px) 2px,
-    calc(100% - 6px) 0px,
-    calc(100% - 8px) 0px
-  );
+  clip-path: polygon(6px 0px,
+      6px 2px,
+      4px 2px,
+      4px 4px,
+      2px 4px,
+      2px 6px,
+      0px 6px,
+      0px 8px,
+      0px calc(100% - 6px),
+      2px calc(100% - 6px),
+      2px calc(100% - 4px),
+      4px calc(100% - 4px),
+      4px calc(100% - 2px),
+      6px calc(100% - 2px),
+      6px calc(100% + 0px),
+      8px calc(100% + 0px),
+      calc(100% - 6px) calc(100% + 0px),
+      calc(100% - 6px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 2px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 4px),
+      calc(100% - 2px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 6px),
+      calc(100% + 0px) calc(100% - 8px),
+      calc(100% + 0px) 6px,
+      calc(100% - 2px) 6px,
+      calc(100% - 2px) 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 4px) 2px,
+      calc(100% - 6px) 2px,
+      calc(100% - 6px) 0px,
+      calc(100% - 8px) 0px);
 }
 
 .hero-section .btn:active {
@@ -634,7 +693,7 @@ h1 {
 }
 
 .footer-col h4 {
-   font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 1.2em;
   margin-bottom: 15px;
   color: rgb(223, 169, 5);
@@ -705,18 +764,23 @@ h1 {
 .social a.instagram {
   color: #e1306c;
 }
+
 .social a.twitter {
   color: #1da1f2;
 }
+
 .social a.github {
   color: #333;
 }
+
 .social a.youtube {
   color: #ff0000;
 }
+
 .social a.linkedin {
   color: #0077b5;
 }
+
 .social a.spotify {
   color: #1db954;
 }
@@ -746,7 +810,7 @@ h1 {
     gap: 10px;
   }
 }
- 
+
 /* Nav */
 
 .bar {
@@ -964,4 +1028,3 @@ h1 {
     display: none;
   }
 }
-

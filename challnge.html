@@ -1,131 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming Challenge</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programming Challenge</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="Css/challengeStyle.css" />
-  </head>
-  <body>
-    <nav class="bar">
-      <div class="logo">
-        <a href="./index.html">CodeArt</a>
-      </div>
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul class="menu" id="menu">
-        <li class="has-dropdown">
-          <a href="#">Learn <span class="dropdown-toggle">▼</span></a>
-          <div class="dropdown">
-            <ul>
-              <li><h4>Web Development</h4></li>
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><h4>Tools</h4></li>
-              <li><a href="#">Command Line</a></li>
-              <li><a href="#">Git & GitHub</a></li>
-              <li><a href="#">GitHub Copilot</a></li>
-            </ul>
-          </div>
+  <link rel="stylesheet" href="Css/challengeStyle.css" />
+</head>
+
+<body>
+  <nav class="bar">
+    <div class="logo">
+      <a href="./index.html">CodeArt</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu" id="menu">
+      <li class="has-dropdown">
+        <a href="#">Learn <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li>
+              <h4>Web Development</h4>
+            </li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li>
+              <h4>Tools</h4>
+            </li>
+            <li><a href="#">Command Line</a></li>
+            <li><a href="#">Git & GitHub</a></li>
+            <li><a href="#">GitHub Copilot</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="./Build.html">Build</a></li>
+      <li class="has-dropdown">
+        <a href="./Community.html">Community <span class="dropdown-toggle">▼</span></a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Leaderboards</a></li>
+            <li><a href="#">Project Showcase</a></li>
+            <li><a href="#">Monthly Challenge</a></li>
+            <li><a href="#">#30NitesOfCode</a></li>
+            <li><a href="#">Worlds</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="./pricing.html">Pricing</a></li>
+    </ul>
+    <div class="right">
+      <a href="#"><i class="fa-solid fa-magnifying-glass" style="font-size: 20px;"></i></a>
+      <a href="#"><i class="fa-solid fa-moon" style="font-size: 22px;"></i></a>
+      <a href="./signUp.html" class="SignUpButton">Sign up</a>
+    </div>
+  </nav>
+  <div class="container">
+    <!-- Left Panel: Problem -->
+    <div class="problem" id="problem">
+      <h2 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Write a Header</h2>
+      <p>
+        Write a Header for an HTML file that is the biggest heading of all time !
+      </p>
+      <h3 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Example 1</h3>
+      <p>Write the famous : <code>"hello World"</code></p>
+      
+      
+      
+      <h3 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Hints</h3>
+      <ul>
+        <li>
+          You can use the <code>h1</code>,
         </li>
-        <li><a href="./Build.html">Build</a></li>
-        <li class="has-dropdown">
-          <a href="./Community.html">Community <span class="dropdown-toggle">▼</span></a>
-          <div class="dropdown">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="#">Leaderboards</a></li>
-              <li><a href="#">Project Showcase</a></li>
-              <li><a href="#">Monthly Challenge</a></li>
-              <li><a href="#">#30NitesOfCode</a></li>
-              <li><a href="#">Worlds</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="./pricing.html">Pricing</a></li>
+        
       </ul>
-      <div class="right">
-        <a href="#"><i class="fa-solid fa-magnifying-glass" style="font-size: 20px;"></i></a>
-        <a href="#"><i class="fa-solid fa-moon" style="font-size: 22px;"></i></a>
-        <a href="./signUp.html" class="SignUpButton">Sign up</a>
-      </div>
-    </nav>
-    <div class="container">
-      <!-- Left Panel: Problem -->
-      <div class="problem" id="problem">
-        <h2 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Challenge: Reverse a String</h2>
-        <p>
-          Write a function that takes a string as input and returns the string
-          reversed.
-        </p>
+      <img src="../assets/images/battle.gif" alt="image" >
+    </div>
 
-        <h3 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Example 1</h3>
-        <p>Input: <code>"hello"</code></p>
-        <p>Output: <code>"olleh"</code></p>
-        <img
-          src="https://i.imgur.com/OuQz0N5.png"
-          alt="Example 1 visualization"
-        />
-
-        <h3 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Example 2</h3>
-        <p>Input: <code>"OpenAI"</code></p>
-        <p>Output: <code>"IAnepO"</code></p>
-        <img
-          src="https://i.imgur.com/fL8y9r5.png"
-          alt="Example 2 visualization"
-        />
-
-        <h3 style="font-family:'Press Start 2P', cursive; font-size:1rem;">Hints</h3>
-        <ul>
-          <li>
-            You can use the <code>split</code>, <code>reverse</code>, and
-            <code>join</code> methods in JavaScript.
-          </li>
-          <li>
-            Remember that strings are immutable in JavaScript, so you need to
-            convert it to an array first.
-          </li>
-        </ul>
-      </div>
-
-      <!-- Vertical Resizer -->
-      <div class="resizer" id="resizer"></div>
+    <!-- Vertical Resizer -->
+    <div class="resizer" id="resizer"></div>
 
 
-      <div class="code-area">
-        <div
-          class="section-label"
-          style="
+    <div class="code-area">
+      <div class="section-label" style="
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-family:'Press Start 2P', cursive;
              font-size:1rem;
-          "
-        >
-          Editor
-          <button class="run-button" id="runButton">Run</button>
-        </div>
+          ">
+        Editor
+        <button class="run-button" id="runButton">Run</button>
+      </div>
 
-        <div class="editor" id="editor" contenteditable="true">
-          // Write your code here function reverseString(str) { return
-          str.split("").reverse().join(""); }
-          console.log(reverseString("hello"));
-          console.log(reverseString("OpenAI"));
-        </div>
+      <div class="editor" id="editor" contenteditable="true">
+        < h 1> Hello World < h 1>
+      </div>
 
-        <!-- Horizontal Resizer -->
-        <div class="resizer-row" id="resizerRow"></div>
+      <!-- Horizontal Resizer -->
+      <div class="resizer-row" id="resizerRow"></div>
 
-        <div class="section-label" style="font-family:'Press Start 2P', cursive; font-size:1rem;">Console</div>
-        <div class="console" id="console">> olleh > IAnepO</div>
+      <div class="section-label" style="font-family:'Press Start 2P', cursive; font-size:1rem;">Console</div>
+      <div class="console" id="console">
+        <h1>HelloWorld</h1>
       </div>
     </div>
-    <script src="js/chalenge.js"></script>
-  </body>
+  </div>
+  <script src="js/chalenge.js"></script>
+</body>
+
 </html>
